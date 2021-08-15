@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://zengshengli775.github.io</id>
+    <id>https://1910853272.github.io</id>
     <title>Sakura</title>
     <subtitle>我以为18岁之后是19岁，19岁之后是18岁，20岁永远都不会到来 。</subtitle>
-    <icon>https://zengshengli775.github.io/images/favicon.ico</icon>
-    <link href="https://zengshengli775.github.io" />
+    <icon>https://1910853272.github.io/images/favicon.ico</icon>
+    <link href="https://1910853272.github.io" />
     <author>
       <name>lzs</name>
     </author>
@@ -14,9 +14,9 @@
     <category term="编程" />
     <category term="笔记" />
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/14/%E8%80%83%E7%A0%94%E6%B5%81%E7%A8%8B%E8%AE%B0%E5%BD%95/</id>
+        <id>https://1910853272.github.io/2021/08/14/%E8%80%83%E7%A0%94%E6%B5%81%E7%A8%8B%E8%AE%B0%E5%BD%95/</id>
         <title>考研流程记录</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/14/%E8%80%83%E7%A0%94%E6%B5%81%E7%A8%8B%E8%AE%B0%E5%BD%95/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/14/%E8%80%83%E7%A0%94%E6%B5%81%E7%A8%8B%E8%AE%B0%E5%BD%95/"/>
         <content type="html">&lt;h2 id=&#34;考研资料&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#考研资料&#34;&gt;#&lt;/a&gt; 考研资料&lt;/h2&gt;
 &lt;h3 id=&#34;数学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学&#34;&gt;#&lt;/a&gt; 数学&lt;/h3&gt;
 &lt;h4 id=&#34;高数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#高数&#34;&gt;#&lt;/a&gt; 高数&lt;/h4&gt;
@@ -168,26 +168,26 @@
 &lt;h5 id=&#34;12月-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#12月-2&#34;&gt;#&lt;/a&gt; 12 月&lt;/h5&gt;
 &lt;p&gt;王道《模拟题》+ 模拟题视频&lt;/p&gt;
 </content>
-        <category term="考研" scheme="https://zengshengli775.github.io/categories/%E8%80%83%E7%A0%94/" />
-        <category term="考研资料" scheme="https://zengshengli775.github.io/tags/%E8%80%83%E7%A0%94%E8%B5%84%E6%96%99/" />
-        <category term="考研规划" scheme="https://zengshengli775.github.io/tags/%E8%80%83%E7%A0%94%E8%A7%84%E5%88%92/" />
+        <category term="考研" scheme="https://1910853272.github.io/categories/%E8%80%83%E7%A0%94/" />
+        <category term="考研资料" scheme="https://1910853272.github.io/tags/%E8%80%83%E7%A0%94%E8%B5%84%E6%96%99/" />
+        <category term="考研规划" scheme="https://1910853272.github.io/tags/%E8%80%83%E7%A0%94%E8%A7%84%E5%88%92/" />
         <updated>2021-08-13T16:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/13/Macbookpro%E6%81%A2%E5%A4%8D%E5%A4%B1%E7%81%B5%E7%9A%84Type-c%E6%8E%A5%E5%8F%A3/</id>
+        <id>https://1910853272.github.io/2021/08/13/Macbookpro%E6%81%A2%E5%A4%8D%E5%A4%B1%E7%81%B5%E7%9A%84Type-c%E6%8E%A5%E5%8F%A3/</id>
         <title>Macbookpro恢复失灵的Type-c接口</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/13/Macbookpro%E6%81%A2%E5%A4%8D%E5%A4%B1%E7%81%B5%E7%9A%84Type-c%E6%8E%A5%E5%8F%A3/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/13/Macbookpro%E6%81%A2%E5%A4%8D%E5%A4%B1%E7%81%B5%E7%9A%84Type-c%E6%8E%A5%E5%8F%A3/"/>
         <content type="html">&lt;p&gt;最近 Macbook Pro 的一个 Type-c 接口失灵了，从网上找到一个方法解决了。&lt;/p&gt;
 &lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;1. 关机&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;2. 按下键盘右侧的 Shift 键，左侧的 Control 和 Option 键不放。此时电脑会开机，等进入显示白 	 条的状态，不要松开手，同时按下电源按钮 10 秒钟。此时电脑将关闭。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;3. 松开所有按键&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;4. 等待 10 秒钟，重新启动电脑&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;只试过用 &lt;code&gt;右侧的Shift+Control+Option&lt;/code&gt; ，没有试过用 &lt;code&gt;左侧的Shift+Control+Option&lt;/code&gt; ，据说不能成功&lt;/p&gt;
 </content>
-        <category term="实用技巧" scheme="https://zengshengli775.github.io/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" />
-        <category term="Mac" scheme="https://zengshengli775.github.io/tags/Mac/" />
+        <category term="实用技巧" scheme="https://1910853272.github.io/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" />
+        <category term="Mac" scheme="https://1910853272.github.io/tags/Mac/" />
         <updated>2021-08-12T16:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/12/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
+        <id>https://1910853272.github.io/2021/08/12/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
         <title>Python基础知识</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/12/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/12/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
         <content type="html">&lt;h2 id=&#34;标识符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标识符&#34;&gt;#&lt;/a&gt; 标识符&lt;/h2&gt;
 &lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;字母、下划线、数字&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;区分大小写&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;字符串&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字符串&#34;&gt;#&lt;/a&gt; 字符串&lt;/h2&gt;
 &lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;string&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;title&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 首字母大写&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token string&#34;&gt;&#34;srring1&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;string2&#34;&lt;/span&gt; 字符串拼接&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;\tPython&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; \t为Table键&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;C\nPython&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; \n为换行符&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;C&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;Python&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;end&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34; &#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; end&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34; &#34;&lt;/span&gt;为以&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;为间隔&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;string&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;strip&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 删除字符串两边的空白&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;join&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sequence&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;-&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	seq &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;a&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;b&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;c&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 字符串序列&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;join&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt; seq &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	以上实例输出结果如下：&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	a&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;b&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;c&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;string&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;&amp;#123;0:.2f&amp;#125; &amp;#123;1:.2f&amp;#125;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;y&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;和&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;表示&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;函数中第一个和第二个参数&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2f&lt;/span&gt;表示小数部分保留两位&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;数字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数字&#34;&gt;#&lt;/a&gt; 数字&lt;/h2&gt;
@@ -211,14 +211,14 @@
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="编程基础" scheme="https://zengshengli775.github.io/categories/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/" />
-        <category term="Python" scheme="https://zengshengli775.github.io/tags/Python/" />
+        <category term="编程基础" scheme="https://1910853272.github.io/categories/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/" />
+        <category term="Python" scheme="https://1910853272.github.io/tags/Python/" />
         <updated>2021-08-11T16:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/11/%E8%BD%AC%E8%BD%BD%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%B3%95/</id>
+        <id>https://1910853272.github.io/2021/08/11/%E8%BD%AC%E8%BD%BD%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%B3%95/</id>
         <title>转载博客方法</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/11/%E8%BD%AC%E8%BD%BD%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%B3%95/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/11/%E8%BD%AC%E8%BD%BD%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%B3%95/"/>
         <content type="html">&lt;h2 id=&#34;原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#原理&#34;&gt;#&lt;/a&gt; 原理&lt;/h2&gt;
 &lt;p&gt;利用 Markdown 能够解析 html 的特色（csdn 编辑模式里能够修改，文章里也有），咱们只要在开发者模式中，将须要转载的人的博客地址的文章部分的 div 块整个复制下来就好了。&lt;/p&gt;
 &lt;h2 id=&#34;步骤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#步骤&#34;&gt;#&lt;/a&gt; 步骤&lt;/h2&gt;
@@ -227,15 +227,15 @@
 &lt;p&gt;3. 右键单击这个 div 块，而后选择 &lt;code&gt;Copy-&amp;gt;copy element&lt;/code&gt; ，就可以将这个块内的元素所有提取下来啦。&lt;/p&gt;
 &lt;p&gt;4. 接下来的事情就是转回本身的博客，使用 markdown 编辑器，将元素复制进来，然后导出。&lt;/p&gt;
 </content>
-        <category term="博客" scheme="https://zengshengli775.github.io/categories/%E5%8D%9A%E5%AE%A2/" />
-        <category term="博客" scheme="https://zengshengli775.github.io/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="Markdown" scheme="https://zengshengli775.github.io/tags/Markdown/" />
+        <category term="博客" scheme="https://1910853272.github.io/categories/%E5%8D%9A%E5%AE%A2/" />
+        <category term="博客" scheme="https://1910853272.github.io/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="Markdown" scheme="https://1910853272.github.io/tags/Markdown/" />
         <updated>2021-08-11T08:42:01.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/11/%E5%AF%BC%E8%88%AA/</id>
+        <id>https://1910853272.github.io/2021/08/11/%E5%AF%BC%E8%88%AA/</id>
         <title>导航</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/11/%E5%AF%BC%E8%88%AA/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/11/%E5%AF%BC%E8%88%AA/"/>
         <content type="html">&lt;h2 id=&#34;导航&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#导航&#34;&gt;#&lt;/a&gt; 导航&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5naXRuYXZpLmNvbS8=&#34;&gt;judasn 专属导航 - GitNavi - Sharing All The World&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hZHpocC5jbi8=&#34;&gt;爱达杂货铺 | 收集那些有用的东西 | 爱达导航&lt;/span&gt;&lt;/p&gt;
@@ -244,14 +244,14 @@
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaXRlLnNjaXBpbmcuY29tLw==&#34;&gt;科塔学术导航 - 最专业、准确、及时和全面的科研与学术资源导航平台&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueHVlOG5hdi5jb20v&#34;&gt;学吧导航 | 四十万学习爱好者都在用的学习导航网站&lt;/span&gt;&lt;/p&gt;
 </content>
-        <category term="导航" scheme="https://zengshengli775.github.io/categories/%E5%AF%BC%E8%88%AA/" />
-        <category term="导航" scheme="https://zengshengli775.github.io/tags/%E5%AF%BC%E8%88%AA/" />
+        <category term="导航" scheme="https://1910853272.github.io/categories/%E5%AF%BC%E8%88%AA/" />
+        <category term="导航" scheme="https://1910853272.github.io/tags/%E5%AF%BC%E8%88%AA/" />
         <updated>2021-08-11T07:52:30.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/11/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</id>
+        <id>https://1910853272.github.io/2021/08/11/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</id>
         <title>编程学习资料</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/11/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/11/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/"/>
         <content type="html">&lt;h2 id=&#34;markdown&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#markdown&#34;&gt;#&lt;/a&gt; Markdown&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS9tYXJrZG93bi9tZC10dXRvcmlhbC5odG1s&#34;&gt;菜鸟教程 - Markdown 教程&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;编程练习&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编程练习&#34;&gt;#&lt;/a&gt; 编程练习&lt;/h2&gt;
@@ -264,20 +264,20 @@
 &lt;h2 id=&#34;算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#算法&#34;&gt;#&lt;/a&gt; 算法&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM0ODY0MTQvYXJ0aWNsZS9kZXRhaWxzLzEwMjk2MTE3MQ==&#34;&gt;刷了几千道算法题，这些我私藏的刷题网站都在这里了！_Rocky0429-CSDN 博客_算法刷题网站&lt;/span&gt;&lt;/p&gt;
 </content>
-        <category term="编程基础" scheme="https://zengshengli775.github.io/categories/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/" />
-        <category term="Markdown" scheme="https://zengshengli775.github.io/tags/Markdown/" />
-        <category term="Python" scheme="https://zengshengli775.github.io/tags/Python/" />
-        <category term="C" scheme="https://zengshengli775.github.io/tags/C/" />
-        <category term="C++" scheme="https://zengshengli775.github.io/tags/C/" />
-        <category term="Matlab" scheme="https://zengshengli775.github.io/tags/Matlab/" />
-        <category term="Java" scheme="https://zengshengli775.github.io/tags/Java/" />
-        <category term="算法" scheme="https://zengshengli775.github.io/tags/%E7%AE%97%E6%B3%95/" />
+        <category term="编程基础" scheme="https://1910853272.github.io/categories/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/" />
+        <category term="Markdown" scheme="https://1910853272.github.io/tags/Markdown/" />
+        <category term="Python" scheme="https://1910853272.github.io/tags/Python/" />
+        <category term="C" scheme="https://1910853272.github.io/tags/C/" />
+        <category term="C++" scheme="https://1910853272.github.io/tags/C/" />
+        <category term="Matlab" scheme="https://1910853272.github.io/tags/Matlab/" />
+        <category term="Java" scheme="https://1910853272.github.io/tags/Java/" />
+        <category term="算法" scheme="https://1910853272.github.io/tags/%E7%AE%97%E6%B3%95/" />
         <updated>2021-08-11T07:11:15.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/11/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/</id>
+        <id>https://1910853272.github.io/2021/08/11/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/</id>
         <title>期末复习资料</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/11/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/11/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/"/>
         <content type="html">&lt;h2 id=&#34;期末复习资料&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#期末复习资料&#34;&gt;#&lt;/a&gt; 期末复习资料&lt;/h2&gt;
 &lt;h3 id=&#34;数据结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据结构&#34;&gt;#&lt;/a&gt; 数据结构&lt;/h3&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zMDgxNDMyOS9hcnRpY2xlL2RldGFpbHMvOTQ5MzQ5MDM/Yml6X2lkPTEwMiZhbXA7dXRtX3Rlcm09JUU2JTk1JUIwJUU2JThEJUFFJUU3JUJCJTkzJUU2JTlFJTg0YyVFOCVBRiVBRCVFOCVBOCU4MCVFNyU4OSU4OCZhbXA7dXRtX21lZGl1bT1kaXN0cmlidXRlLnBjX3NlYXJjaF9yZXN1bHQubm9uZS10YXNrLWJsb2ctMn5ibG9nfnNvYmFpZHV3ZWJ+ZGVmYXVsdC0xLTk0OTM0OTAzJmFtcDtzcG09MTAxOC4yMTE4LjMwMDEuNDE4Nw==&#34;&gt;数据结构（c 语言版）代码_weixin_30814329 的博客 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
@@ -299,14 +299,14 @@
 &lt;h3 id=&#34;四六级&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四六级&#34;&gt;#&lt;/a&gt; 四六级&lt;/h3&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYW4udXZvb2MuY29tL0xlYXJuL0NFVC9DRVQ2Lw==&#34;&gt;友沃可云 - 在线云文件&lt;/span&gt;&lt;/p&gt;
 </content>
-        <category term="专业课" scheme="https://zengshengli775.github.io/categories/%E4%B8%93%E4%B8%9A%E8%AF%BE/" />
-        <category term="期末复习" scheme="https://zengshengli775.github.io/tags/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" />
+        <category term="专业课" scheme="https://1910853272.github.io/categories/%E4%B8%93%E4%B8%9A%E8%AF%BE/" />
+        <category term="期末复习" scheme="https://1910853272.github.io/tags/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" />
         <updated>2021-08-11T06:55:17.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/11/%E8%BD%AF%E4%BB%B6%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</id>
+        <id>https://1910853272.github.io/2021/08/11/%E8%BD%AF%E4%BB%B6%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</id>
         <title>软件网站汇总</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/11/%E8%BD%AF%E4%BB%B6%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/11/%E8%BD%AF%E4%BB%B6%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/"/>
         <content type="html">&lt;h2 id=&#34;软件网站汇总&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#软件网站汇总&#34;&gt;#&lt;/a&gt; 软件网站汇总&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3RpZmFsb2NraGFydC55czE2OC5jb20v&#34;&gt;Tifalockhart&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9heHV0b25neHVlLmNvbS8=&#34;&gt;阿虚同学的储物间&lt;/span&gt;&lt;/p&gt;
@@ -322,14 +322,14 @@
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3otc21zLmNvbS8=&#34;&gt;在线云短信网页版 - 免费接码平台【官网】&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhhb2ppYW9iZW4uY24v&#34;&gt;找脚本 —— 找任何你需要的脚本&lt;/span&gt;&lt;/p&gt;
 </content>
-        <category term="软件" scheme="https://zengshengli775.github.io/categories/%E8%BD%AF%E4%BB%B6/" />
-        <category term="软件网站" scheme="https://zengshengli775.github.io/tags/%E8%BD%AF%E4%BB%B6%E7%BD%91%E7%AB%99/" />
+        <category term="软件" scheme="https://1910853272.github.io/categories/%E8%BD%AF%E4%BB%B6/" />
+        <category term="软件网站" scheme="https://1910853272.github.io/tags/%E8%BD%AF%E4%BB%B6%E7%BD%91%E7%AB%99/" />
         <updated>2021-08-11T04:28:34.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/11/Hexo%E5%8D%9A%E5%AE%A2%E5%86%99%E6%96%87%E7%AB%A0/</id>
+        <id>https://1910853272.github.io/2021/08/11/Hexo%E5%8D%9A%E5%AE%A2%E5%86%99%E6%96%87%E7%AB%A0/</id>
         <title>Hexo博客写文章</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/11/Hexo%E5%8D%9A%E5%AE%A2%E5%86%99%E6%96%87%E7%AB%A0/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/11/Hexo%E5%8D%9A%E5%AE%A2%E5%86%99%E6%96%87%E7%AB%A0/"/>
         <content type="html">&lt;h2 id=&#34;新建文档&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#新建文档&#34;&gt;#&lt;/a&gt; 新建文档&lt;/h2&gt;
 &lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cd Hexo-Blog&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo n 文章标题&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;md文档可以设定文章资源文件夹功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#md文档可以设定文章资源文件夹功能&#34;&gt;#&lt;/a&gt; md 文档可以设定文章资源文件夹功能&lt;/h3&gt;
 &lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;#使用文本编辑器打开站点根目录下的 _ config.yml 文件，将 post_asset_folder 值设置为 true。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;post_asset_folder: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;front-matter&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#front-matter&#34;&gt;#&lt;/a&gt; Front-matter&lt;/h2&gt;
@@ -411,29 +411,29 @@
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE5MDY5NTA5L2FydGljbGUvZGV0YWlscy8xMDU0NDQ3NTU/b3BzX3JlcXVlc3RfbWlzYz0lMjU3QiUyNTIycmVxdWVzdCUyNTVGaWQlMjUyMiUyNTNBJTI1MjIxNjI4NzYxODQ2MTY3ODAyNTUyNTM2ODMlMjUyMiUyNTJDJTI1MjJzY20lMjUyMiUyNTNBJTI1MjIyMDE0MDcxMy4xMzAxMDIzMzQuLiUyNTIyJTI1N0QmYW1wO3JlcXVlc3RfaWQ9MTYyODc2MTg0NjE2NzgwMjU1MjUzNjgzJmFtcDtiaXpfaWQ9MCZhbXA7dXRtX21lZGl1bT1kaXN0cmlidXRlLnBjX3NlYXJjaF9yZXN1bHQubm9uZS10YXNrLWJsb2ctMn5hbGx+c29iYWlkdWVuZH5kZWZhdWx0LTEtMTA1NDQ0NzU1LmZpcnN0X3JhbmtfdjJfcGNfcmFua192MjkmYW1wO3V0bV90ZXJtPWhleG9HaXRlZSZhbXA7c3BtPTEwMTguMjIyNi4zMDAxLjQxODc=&#34;&gt;Hexo+Gitee 搭建个人博客_暮子凡的博客 - CSDN 博客&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;因为 Gitee Pages 功能暂时不能用，所以还未尝试。&lt;/p&gt;
 </content>
-        <category term="博客" scheme="https://zengshengli775.github.io/categories/%E5%8D%9A%E5%AE%A2/" />
-        <category term="Hexo" scheme="https://zengshengli775.github.io/tags/Hexo/" />
-        <category term="博客" scheme="https://zengshengli775.github.io/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="Markdown" scheme="https://zengshengli775.github.io/tags/Markdown/" />
+        <category term="博客" scheme="https://1910853272.github.io/categories/%E5%8D%9A%E5%AE%A2/" />
+        <category term="Hexo" scheme="https://1910853272.github.io/tags/Hexo/" />
+        <category term="博客" scheme="https://1910853272.github.io/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="Markdown" scheme="https://1910853272.github.io/tags/Markdown/" />
         <updated>2021-08-11T01:47:16.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/10/%E8%80%83%E7%A0%94%E8%B5%84%E6%96%99%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</id>
+        <id>https://1910853272.github.io/2021/08/10/%E8%80%83%E7%A0%94%E8%B5%84%E6%96%99%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</id>
         <title>考研资料网站汇总</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/10/%E8%80%83%E7%A0%94%E8%B5%84%E6%96%99%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/10/%E8%80%83%E7%A0%94%E8%B5%84%E6%96%99%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/"/>
         <content type="html">&lt;h2 id=&#34;考研资料网站&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#考研资料网站&#34;&gt;#&lt;/a&gt; 考研资料网站&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3F6Ymx0dXNodS55czE2OC5jb20v&#34;&gt;金榜题名&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2F4a3kueXMxNjguY29tLw==&#34;&gt;安心考研&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy50aWt1d2FuZy5jb20vYXBwL2luZGV4LnBocD9pPTImYW1wO2M9ZW50cnkmYW1wO2RvPWZlbmdtaWFuJmFtcDttPWh1bHVfaW5mbyZhbXA7d3hyZWY9bXAud2VpeGluLnFxLmNvbSN3ZWNoYXRfcmVkaXJlY3Q=&#34;&gt;考研资料区&lt;/span&gt;&lt;/p&gt;
 </content>
-        <category term="考研" scheme="https://zengshengli775.github.io/categories/%E8%80%83%E7%A0%94/" />
-        <category term="考研资料网站" scheme="https://zengshengli775.github.io/tags/%E8%80%83%E7%A0%94%E8%B5%84%E6%96%99%E7%BD%91%E7%AB%99/" />
+        <category term="考研" scheme="https://1910853272.github.io/categories/%E8%80%83%E7%A0%94/" />
+        <category term="考研资料网站" scheme="https://1910853272.github.io/tags/%E8%80%83%E7%A0%94%E8%B5%84%E6%96%99%E7%BD%91%E7%AB%99/" />
         <updated>2021-08-10T15:29:55.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/10/%E5%A8%B1%E4%B9%90%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</id>
+        <id>https://1910853272.github.io/2021/08/10/%E5%A8%B1%E4%B9%90%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</id>
         <title>娱乐网站汇总</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/10/%E5%A8%B1%E4%B9%90%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/10/%E5%A8%B1%E4%B9%90%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/"/>
         <content type="html">&lt;h2 id=&#34;动漫网站&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动漫网站&#34;&gt;#&lt;/a&gt; 动漫网站&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5uaWNvdHYubWUv&#34;&gt;妮可动漫&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZG0yMzMuY2Mv&#34;&gt;233 动漫网 &lt;/span&gt;&lt;/p&gt;
@@ -446,17 +446,17 @@
 &lt;h2 id=&#34;漫画网站&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#漫画网站&#34;&gt;#&lt;/a&gt; 漫画网站&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5iYWloZWhoLnh5ei9iaW5wL3dtYWluL21hbmdhbGlzdC5waHA/Y29uZmlybT15ZXM=&#34;&gt;百合汉化平台&lt;/span&gt;&lt;/p&gt;
 </content>
-        <category term="娱乐" scheme="https://zengshengli775.github.io/categories/%E5%A8%B1%E4%B9%90/" />
-        <category term="动漫" scheme="https://zengshengli775.github.io/tags/%E5%8A%A8%E6%BC%AB/" />
-        <category term="游戏" scheme="https://zengshengli775.github.io/tags/%E6%B8%B8%E6%88%8F/" />
-        <category term="小说" scheme="https://zengshengli775.github.io/tags/%E5%B0%8F%E8%AF%B4/" />
-        <category term="漫画" scheme="https://zengshengli775.github.io/tags/%E6%BC%AB%E7%94%BB/" />
+        <category term="娱乐" scheme="https://1910853272.github.io/categories/%E5%A8%B1%E4%B9%90/" />
+        <category term="动漫" scheme="https://1910853272.github.io/tags/%E5%8A%A8%E6%BC%AB/" />
+        <category term="游戏" scheme="https://1910853272.github.io/tags/%E6%B8%B8%E6%88%8F/" />
+        <category term="小说" scheme="https://1910853272.github.io/tags/%E5%B0%8F%E8%AF%B4/" />
+        <category term="漫画" scheme="https://1910853272.github.io/tags/%E6%BC%AB%E7%94%BB/" />
         <updated>2021-08-10T15:28:58.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/10/PDF%E4%B9%A6%E7%B1%8D%E4%BB%A3%E6%89%BE/</id>
+        <id>https://1910853272.github.io/2021/08/10/PDF%E4%B9%A6%E7%B1%8D%E4%BB%A3%E6%89%BE/</id>
         <title>PDF书籍代找</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/10/PDF%E4%B9%A6%E7%B1%8D%E4%BB%A3%E6%89%BE/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/10/PDF%E4%B9%A6%E7%B1%8D%E4%BB%A3%E6%89%BE/"/>
         <content type="html">&lt;h2 id=&#34;图书互助&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图书互助&#34;&gt;#&lt;/a&gt; 图书互助&lt;/h2&gt;
 &lt;p&gt;安装 Greasyfork 脚本：&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ncmVhc3lmb3JrLm9yZy96aC1DTi9zY3JpcHRzLzQyMDc1MS0lRTUlOUIlQkUlRTQlQjklQTYlRTQlQkElOTIlRTUlOEElQTk=&#34;&gt;图书互助&lt;/span&gt;&lt;/p&gt;
@@ -478,15 +478,15 @@
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLnFxLmNvbS9zaGVldC9EVW0xQmEydFphME51VUZabj90YWI9dHBjbWox&#34;&gt;大学生常用软件、软件教程及干货资料（持续更新）&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL25lb25taWtlLzQwOA==&#34;&gt; 计算机专业课（408）思维导图和笔记&lt;/span&gt;&lt;/p&gt;
 </content>
-        <category term="学习工具" scheme="https://zengshengli775.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/" />
-        <category term="找书网站" scheme="https://zengshengli775.github.io/tags/%E6%89%BE%E4%B9%A6%E7%BD%91%E7%AB%99/" />
-        <category term="图书互助" scheme="https://zengshengli775.github.io/tags/%E5%9B%BE%E4%B9%A6%E4%BA%92%E5%8A%A9/" />
+        <category term="学习工具" scheme="https://1910853272.github.io/categories/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/" />
+        <category term="找书网站" scheme="https://1910853272.github.io/tags/%E6%89%BE%E4%B9%A6%E7%BD%91%E7%AB%99/" />
+        <category term="图书互助" scheme="https://1910853272.github.io/tags/%E5%9B%BE%E4%B9%A6%E4%BA%92%E5%8A%A9/" />
         <updated>2021-08-10T15:19:23.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/10/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98-shoka%E7%9A%84%E9%85%8D%E7%BD%AE/</id>
+        <id>https://1910853272.github.io/2021/08/10/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98-shoka%E7%9A%84%E9%85%8D%E7%BD%AE/</id>
         <title>Hexo博客主题-shoka的配置</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/10/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98-shoka%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/10/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98-shoka%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
         <content type="html">&lt;h2 id=&#34;链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#链接&#34;&gt;#&lt;/a&gt; 链接&lt;/h2&gt;
 &lt;p&gt;Shoka 博客链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34;&gt;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Github 链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==&#34;&gt;https://github.com/amehime/hexo-theme-shoka&lt;/span&gt;&lt;/p&gt;
@@ -511,16 +511,16 @@
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2JsaW5rZm94L2hleG8tdGhlbWUtbWF0ZXJ5&#34;&gt;Matery&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2ZsdWlkLWRldi9oZXhvLXRoZW1lLWZsdWlk&#34;&gt;Fluid&lt;/span&gt;&lt;/p&gt;
 </content>
-        <category term="博客" scheme="https://zengshengli775.github.io/categories/%E5%8D%9A%E5%AE%A2/" />
-        <category term="Hexo" scheme="https://zengshengli775.github.io/tags/Hexo/" />
-        <category term="配置" scheme="https://zengshengli775.github.io/tags/%E9%85%8D%E7%BD%AE/" />
-        <category term="shoka" scheme="https://zengshengli775.github.io/tags/shoka/" />
+        <category term="博客" scheme="https://1910853272.github.io/categories/%E5%8D%9A%E5%AE%A2/" />
+        <category term="Hexo" scheme="https://1910853272.github.io/tags/Hexo/" />
+        <category term="配置" scheme="https://1910853272.github.io/tags/%E9%85%8D%E7%BD%AE/" />
+        <category term="shoka" scheme="https://1910853272.github.io/tags/shoka/" />
         <updated>2021-08-09T16:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.github.io/2021/08/09/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</id>
+        <id>https://1910853272.github.io/2021/08/09/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</id>
         <title>搭建Hexo博客</title>
-        <link rel="alternate" href="https://zengshengli775.github.io/2021/08/09/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/"/>
+        <link rel="alternate" href="https://1910853272.github.io/2021/08/09/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/"/>
         <content type="html">&lt;p&gt;#安装 Nodejs&lt;br&gt;
 node -v	# 查看 node 版本&lt;br&gt;
  npm -v	# 查看 npm 版本&lt;br&gt;
@@ -551,9 +551,9 @@ hexo d	# 部署到 Github 仓库里&lt;br&gt;
  hexo d	# 部署到远程 Github 仓库&lt;br&gt;
 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9Zb3VyR2l0aHViTmFtZS5naXRodWIuaW8v&#34;&gt; https://YourGithubName.github.io/&lt;/span&gt;  #查看博客&lt;/p&gt;
 </content>
-        <category term="博客" scheme="https://zengshengli775.github.io/categories/%E5%8D%9A%E5%AE%A2/" />
-        <category term="Hexo" scheme="https://zengshengli775.github.io/tags/Hexo/" />
-        <category term="配置" scheme="https://zengshengli775.github.io/tags/%E9%85%8D%E7%BD%AE/" />
+        <category term="博客" scheme="https://1910853272.github.io/categories/%E5%8D%9A%E5%AE%A2/" />
+        <category term="Hexo" scheme="https://1910853272.github.io/tags/Hexo/" />
+        <category term="配置" scheme="https://1910853272.github.io/tags/%E9%85%8D%E7%BD%AE/" />
         <updated>2021-08-09T06:04:29.000Z</updated>
     </entry>
 </feed>
