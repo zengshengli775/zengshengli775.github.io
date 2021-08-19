@@ -57,7 +57,7 @@ a 存储单元中的数据可以是一个普通数值，也可以是另一个存
     </entry>
     <entry>
         <id>https://1910853272.github.io/2021/08/18/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
-        <title>Python基础知识</title>
+        <title>C语言基础知识</title>
         <link rel="alternate" href="https://1910853272.github.io/2021/08/18/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
         <content type="html">&lt;h2 id=&#34;注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注释&#34;&gt;#&lt;/a&gt; 注释&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;// 单行注释
