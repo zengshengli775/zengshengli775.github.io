@@ -10,12 +10,39 @@
         </author>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Wed, 25 Aug 2021 00:00:00 +0800</pubDate>
-        <lastBuildDate>Wed, 25 Aug 2021 00:00:00 +0800</lastBuildDate>
+        <pubDate>Thu, 26 Aug 2021 00:00:00 +0800</pubDate>
+        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0800</lastBuildDate>
         <category term="博客" />
         <category term="主题" />
         <category term="编程" />
         <category term="笔记" />
+        <item>
+            <guid isPermalink="true">https://zengshengli775.gitee.io/2021/08/26/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/</guid>
+            <title>机器学习基础</title>
+            <link>https://zengshengli775.gitee.io/2021/08/26/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/</link>
+            <category term="机器学习" scheme="https://zengshengli775.gitee.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
+            <category term="机器学习" scheme="https://zengshengli775.gitee.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
+            <pubDate>Thu, 26 Aug 2021 00:00:00 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://zengshengli775.gitee.io/2021/08/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/</guid>
+            <title>数据结构与算法基础</title>
+            <link>https://zengshengli775.gitee.io/2021/08/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/</link>
+            <category term="数据结构与算法" scheme="https://zengshengli775.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" />
+            <category term="数据结构与算法" scheme="https://zengshengli775.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" />
+            <pubDate>Thu, 26 Aug 2021 00:00:00 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://zengshengli775.gitee.io/2021/08/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/</guid>
+            <title>深度学习基础</title>
+            <link>https://zengshengli775.gitee.io/2021/08/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/</link>
+            <category term="深度学习" scheme="https://zengshengli775.gitee.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
+            <category term="深度学习" scheme="https://zengshengli775.gitee.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
+            <pubDate>Thu, 26 Aug 2021 00:00:00 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://zengshengli775.gitee.io/2021/08/25/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/Mac%20VScode%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
             <title>Mac VScode快捷键</title>
@@ -35,6 +62,17 @@
 &lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Ctrl + F 全屏、退出全屏&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Option + 1 切换编辑器分屏方式（横、竖）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + + 放大&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + - 缩小&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + B 显示、隐藏侧边栏&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Shift + E 显示资源管理器 或 切换焦点&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Shift + F 显示搜索框&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Ctrl + Shift + G 显示 Git 面板&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Shift + D 显示调试面板&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Shift + X 显示插件面板&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Shift + H 全局搜索替换&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Shift + J 显示、隐藏高级搜索&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Shift + C 打开新终端&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Shift + U 显示输出面板&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Shift + V Markdown 预览窗口&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + K V 分屏显示 Markdown 预览窗口&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;调试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#调试&#34;&gt;#&lt;/a&gt; 调试&lt;/h2&gt;
 &lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;F9 设置 或 取消断点&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;F5 开始 或 继续&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;F11 进入&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Shift + F11 跳出&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;F10 跳过&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + K Command + I 显示悬停信息&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;集成终端&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#集成终端&#34;&gt;#&lt;/a&gt; 集成终端&lt;/h2&gt;
 &lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Ctrl + &amp;#96; 显示终端&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Ctrl + Shift + &amp;#96; 新建终端&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Up 向上滚动&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Down 向下滚动&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;PgUp 向上翻页&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;PgDown 向下翻页&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Home 滚动到顶部&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + End 滚动到底部&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://zengshengli775.gitee.io/2021/08/25/%E7%A7%91%E7%A0%94/%E7%A7%91%E7%A0%94%E6%96%87%E7%8C%AE%E7%BD%91%E7%AB%99/</guid>
+            <title>科研文献网站</title>
+            <link>https://zengshengli775.gitee.io/2021/08/25/%E7%A7%91%E7%A0%94/%E7%A7%91%E7%A0%94%E6%96%87%E7%8C%AE%E7%BD%91%E7%AB%99/</link>
+            <category term="科研" scheme="https://zengshengli775.gitee.io/categories/%E7%A7%91%E7%A0%94/" />
+            <category term="科研文献网站" scheme="https://zengshengli775.gitee.io/tags/%E7%A7%91%E7%A0%94%E6%96%87%E7%8C%AE%E7%BD%91%E7%AB%99/" />
+            <pubDate>Wed, 25 Aug 2021 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;科研文献网站&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#科研文献网站&#34;&gt;#&lt;/a&gt; 科研文献网站&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc3RvcmthcHAubWUvP3JlZj05MzYxNy0xMQ==&#34;&gt;文献鸟 Stork，您忠实的科研助手，追踪新文献&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://zengshengli775.gitee.io/2021/08/23/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/Chrome%E5%9C%A8%E7%BA%BF%E8%A7%86%E9%A2%91%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%AD%97%E5%B9%95/</guid>
@@ -93,13 +131,128 @@ a 存储单元中的数据可以是一个普通数值，也可以是另一个存
             <pubDate>Wed, 18 Aug 2021 00:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;注释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注释&#34;&gt;#&lt;/a&gt; 注释&lt;/h2&gt;
 &lt;figure class=&#34;highlight c&#34;&gt;&lt;figcaption data-lang=&#34;c&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 单行注释&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/* 单行注释 */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/* &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 多行注释&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 多行注释&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 多行注释&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;数据类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据类型&#34;&gt;#&lt;/a&gt; 数据类型&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;基本类型&lt;/strong&gt;：它们是算术类型，包括两种类型：整数类型和浮点类型。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;枚举类型&lt;/strong&gt;：它们也是算术类型，被用来定义在程序中只能赋予其一定的离散整数值的变量。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;void 类型&lt;/strong&gt;：类型说明符 &lt;em&gt;void&lt;/em&gt; 表明没有可用的值。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;派生类型&lt;/strong&gt;：它们包括：指针类型、数组类型、结构类型、共用体类型和函数类型。&lt;/p&gt;
+&lt;h4 id=&#34;基本类型它们是算术类型包括两种类型整数类型和浮点类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本类型它们是算术类型包括两种类型整数类型和浮点类型&#34;&gt;#&lt;/a&gt; 基本类型：它们是算术类型，包括两种类型：整数类型和浮点类型。&lt;/h4&gt;
+&lt;h5 id=&#34;整数类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#整数类型&#34;&gt;#&lt;/a&gt; 整数类型&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;类型&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;存储大小&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;值范围&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;char&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1 字节&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;-128 到 127 或 0 到 255&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;unsigned char&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1 字节&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0 到 255&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;signed char&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1 字节&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;-128 到 127&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;int&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;2 或 4 字节&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;-32,768 到 32,767 或 -2,147,483,648 到 2,147,483,647&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;unsigned int&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;2 或 4 字节&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0 到 65,535 或 0 到 4,294,967,295&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;short&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;2 字节&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;-32,768 到 32,767&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;unsigned short&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;2 字节&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0 到 65,535&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;long&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;4 字节&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;-2,147,483,648 到 2,147,483,647&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;unsigned long&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;4 字节&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0 到 4,294,967,295&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;浮点类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#浮点类型&#34;&gt;#&lt;/a&gt; 浮点类型&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;类型&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;存储大小&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;值范围&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;精度&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;float&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;4 字节&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1.2E-38 到 3.4E+38&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;6 位有效位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;double&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;8 字节&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;2.3E-308 到 1.7E+308&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;15 位有效位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;long double&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;16 字节&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;3.4E-4932 到 1.1E+4932&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;19 位有效位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;枚举类型它们也是算术类型被用来定义在程序中只能赋予其一定的离散整数值的变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#枚举类型它们也是算术类型被用来定义在程序中只能赋予其一定的离散整数值的变量&#34;&gt;#&lt;/a&gt; 枚举类型：它们也是算术类型，被用来定义在程序中只能赋予其一定的离散整数值的变量。&lt;/h4&gt;
+&lt;h4 id=&#34;void-类型类型说明符-void-表明没有可用的值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#void-类型类型说明符-void-表明没有可用的值&#34;&gt;#&lt;/a&gt; void 类型：类型说明符 &lt;em&gt;void&lt;/em&gt; 表明没有可用的值。&lt;/h4&gt;
+&lt;h5 id=&#34;void-类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#void-类型&#34;&gt;#&lt;/a&gt; void 类型&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;序号&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;类型与描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;函数返回为空&lt;/strong&gt; C 中有各种函数都不返回值，或者您可以说它们返回空。不返回值的函数的返回类型为空。例如 &lt;strong&gt;void exit (int status);&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;函数参数为空&lt;/strong&gt; C 中有各种函数不接受任何参数。不带参数的函数可以接受一个 void。例如 &lt;strong&gt;int rand(void);&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;指针指向 void&lt;/strong&gt; 类型为 void * 的指针代表对象的地址，而不是类型。例如，内存分配函数 &lt;strong&gt;void *malloc( size_t size );&lt;/strong&gt; 返回指向 void 的指针，可以转换为任何数据类型。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;派生类型它们包括指针类型-数组类型-结构类型-共用体类型和函数类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#派生类型它们包括指针类型-数组类型-结构类型-共用体类型和函数类型&#34;&gt;#&lt;/a&gt; 派生类型：它们包括：指针类型、数组类型、结构类型、共用体类型和函数类型。&lt;/h4&gt;
 &lt;h2 id=&#34;变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#变量&#34;&gt;#&lt;/a&gt; 变量&lt;/h2&gt;
 &lt;p&gt;变量定义：&amp;lt;类型名称&amp;gt; &amp;lt; 变量名称 &amp;gt;&lt;/p&gt;
-&lt;p&gt;变量类型：char int float double void&lt;/p&gt;
+&lt;p&gt;变量类型：&lt;strong&gt;char&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​					&lt;strong&gt;int&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​					&lt;strong&gt;float&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​					&lt;strong&gt;double&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​					 &lt;strong&gt;void&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;常量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常量&#34;&gt;#&lt;/a&gt; 常量&lt;/h2&gt;
 &lt;p&gt;在 C 中，有两种简单的定义常量的方式：&lt;/p&gt;
 &lt;ol&gt;
@@ -478,18 +631,15 @@ a 存储单元中的数据可以是一个普通数值，也可以是另一个存
             <title>编程学习资料</title>
             <link>https://zengshengli775.gitee.io/2021/08/11/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</link>
             <category term="编程基础" scheme="https://zengshengli775.gitee.io/categories/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/" />
-            <category term="Markdown" scheme="https://zengshengli775.gitee.io/tags/Markdown/" />
-            <category term="Python" scheme="https://zengshengli775.gitee.io/tags/Python/" />
-            <category term="C" scheme="https://zengshengli775.gitee.io/tags/C/" />
-            <category term="C++" scheme="https://zengshengli775.gitee.io/tags/C/" />
-            <category term="Matlab" scheme="https://zengshengli775.gitee.io/tags/Matlab/" />
-            <category term="Java" scheme="https://zengshengli775.gitee.io/tags/Java/" />
-            <category term="算法" scheme="https://zengshengli775.gitee.io/tags/%E7%AE%97%E6%B3%95/" />
+            <category term="编程工具" scheme="https://zengshengli775.gitee.io/tags/%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7/" />
+            <category term="编程学习资料" scheme="https://zengshengli775.gitee.io/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" />
             <pubDate>Wed, 11 Aug 2021 15:11:15 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;markdown&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#markdown&#34;&gt;#&lt;/a&gt; Markdown&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS9tYXJrZG93bi9tZC10dXRvcmlhbC5odG1s&#34;&gt;菜鸟教程 - Markdown 教程&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90b29sLmx1Lw==&#34;&gt;在线工具牌在线工具&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;编程练习&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编程练习&#34;&gt;#&lt;/a&gt; 编程练习&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS1jbi5jb20vcHJvYmxlbXNldC9hbGwvP2RpZmZpY3VsdHk9JUU3JUFFJTgwJUU1JThEJTk1&#34;&gt;「简单」题目合集 - 力扣（LeetCode）&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9waW50aWEuY24vcHJvYmxlbS1zZXRzP3RhYj0w&#34;&gt;PAT&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lZGFiaXQuY29tL2NoYWxsZW5nZXM=&#34;&gt;10,000+ Coding Practice Challenges // Edabit&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92aXN1YWxnby5uZXQvZW4=&#34;&gt;VisuAlgo - 通过动画可视化数据结构和算法&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;matlab&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#matlab&#34;&gt;#&lt;/a&gt; Matlab&lt;/h2&gt;
@@ -653,6 +803,7 @@ a 存储单元中的数据可以是一个普通数值，也可以是另一个存
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3F6Ymx0dXNodS55czE2OC5jb20v&#34;&gt;金榜题名&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2F4a3kueXMxNjguY29tLw==&#34;&gt;安心考研&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy50aWt1d2FuZy5jb20vYXBwL2luZGV4LnBocD9pPTImYW1wO2M9ZW50cnkmYW1wO2RvPWZlbmdtaWFuJmFtcDttPWh1bHVfaW5mbyZhbXA7d3hyZWY9bXAud2VpeGluLnFxLmNvbSN3ZWNoYXRfcmVkaXJlY3Q=&#34;&gt;考研资料区&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly95ei5jaHNpLmNvbS5jbi8=&#34;&gt;中国研究生招生信息网&lt;/span&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -714,79 +865,6 @@ a 存储单元中的数据可以是一个普通数值，也可以是另一个存
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0phY2tleUxlYS9OSlVDUw==&#34;&gt;2021 南京大学计算机科学与技术 845 考研公共课和专业课资料&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLnFxLmNvbS9zaGVldC9EVW0xQmEydFphME51VUZabj90YWI9dHBjbWox&#34;&gt;大学生常用软件、软件教程及干货资料（持续更新）&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL25lb25taWtlLzQwOA==&#34;&gt; 计算机专业课（408）思维导图和笔记&lt;/span&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://zengshengli775.gitee.io/2021/08/10/%E5%8D%9A%E5%AE%A2/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98-shoka%E7%9A%84%E9%85%8D%E7%BD%AE/</guid>
-            <title>Hexo博客主题-shoka的配置</title>
-            <link>https://zengshengli775.gitee.io/2021/08/10/%E5%8D%9A%E5%AE%A2/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98-shoka%E7%9A%84%E9%85%8D%E7%BD%AE/</link>
-            <category term="博客" scheme="https://zengshengli775.gitee.io/categories/%E5%8D%9A%E5%AE%A2/" />
-            <category term="Hexo" scheme="https://zengshengli775.gitee.io/tags/Hexo/" />
-            <category term="配置" scheme="https://zengshengli775.gitee.io/tags/%E9%85%8D%E7%BD%AE/" />
-            <category term="shoka" scheme="https://zengshengli775.gitee.io/tags/shoka/" />
-            <pubDate>Tue, 10 Aug 2021 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#链接&#34;&gt;#&lt;/a&gt; 链接&lt;/h2&gt;
-&lt;p&gt;Shoka 博客链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34;&gt;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Github 链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==&#34;&gt;https://github.com/amehime/hexo-theme-shoka&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;配置参考链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLm1vZWh6LmNvbS9hcmNoaXZlcy9oZXhvLXNob2thLWJ1aWxkLmh0bWw=&#34;&gt;https://blog.moehz.com/archives/hexo-shoka-build.html&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;​						   &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0JldHJheVZpcmdpbmlhL2FydGljbGUvZGV0YWlscy8xMTM1NzIzNjQ=&#34;&gt;https://blog.csdn.net/BetrayVirginia/article/details/113572364&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;安装主题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装主题&#34;&gt;#&lt;/a&gt; 安装主题&lt;/h2&gt;
-&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;git clone https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;amehime&amp;#x2F;hexo-theme-shoka.git .&amp;#x2F;themes&amp;#x2F;shoka&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;安装依赖插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装依赖插件&#34;&gt;#&lt;/a&gt; 安装依赖插件&lt;/h2&gt;
-&lt;p&gt;hexo-renderer-multi-markdown-it：&lt;/p&gt;
-&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;#安装前，记得务必卸载掉默认的 hexo-renderer-marked ，以及别的 markdown 文件渲染器&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm un hexo-renderer-marked --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# 安装&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm i hexo-renderer-multi-markdown-it --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# 如果安装缓慢，或者失败&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm i hexo-renderer-multi-markdown-it --save --ignore-scripts&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# 配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;markdown:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  render: # 渲染器设置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    html: false # 过滤 HTML 标签&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    xhtmlOut: true # 使用 &amp;#39;&amp;#x2F;&amp;#39; 来闭合单标签 （比如 &amp;lt;br &amp;#x2F;&amp;gt;）。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    breaks: true # 转换段落里的 &amp;#39;\n&amp;#39; 到 &amp;lt;br&amp;gt;。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    linkify: true # 将类似 URL 的文本自动转换为链接。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    typographer: &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    quotes: &amp;#39;“”‘’&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  plugins: # markdown-it 插件设置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    - plugin:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        name: markdown-it-toc-and-anchor&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        enable: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        options: # 文章目录以及锚点应用的 class 名称，shoka 主题必须设置成这样&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          tocClassName: &amp;#39;toc&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          anchorClassName: &amp;#39;anchor&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    - plugin:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        name: markdown-it-multimd-table&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        enable: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        options:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          multiline: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          rowspan: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          headerless: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    - plugin:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        name: .&amp;#x2F;markdown-it-furigana&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;35&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        enable: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;36&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        options:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;37&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          fallbackParens: &amp;quot;()&amp;quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;38&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    - plugin:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;39&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        name: .&amp;#x2F;markdown-it-spoiler&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;40&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        enable: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;41&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        options:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;42&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          title: &amp;quot;你知道得太多了&amp;quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;43&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;          &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;44&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;45&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;minify:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;46&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  html:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;47&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    enable: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;48&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    exclude: # 排除 hexo-feed 用到的模板文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;49&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - &amp;#39;**&amp;#x2F;json.ejs&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;50&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - &amp;#39;**&amp;#x2F;atom.ejs&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;51&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - &amp;#39;**&amp;#x2F;rss.ejs&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;52&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  css:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;53&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    enable: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;54&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    exclude:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;55&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - &amp;#39;**&amp;#x2F;*.min.css&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;56&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  js:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;57&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    enable: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;58&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    mangle:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;59&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      toplevel: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;60&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    output:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;61&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    compress:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;62&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    exclude:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;63&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - &amp;#39;**&amp;#x2F;*.min.js&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;hexo-autoprefixer：&lt;/p&gt;
-&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;#安装&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm install hexo-autoprefixer --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# 配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;autoprefixer:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  exclude:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    - &amp;#39;*.min.css&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;hexo-algoliasearch：&lt;/p&gt;
-&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;#安装&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm install hexo-algoliasearch --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# 配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;algolia:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  appId: #Your appId&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  apiKey: #Your apiKey&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  adminApiKey: #Your adminApiKey&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  chunkSize: 5000&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  indexName: #&amp;quot;shoka&amp;quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  fields:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    - title #必须配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    - path #必须配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    - categories #推荐配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    - content:strip:truncate,0,2000&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    - gallery&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    - photos&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    - tags&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;hexo-symbols-count-time：&lt;/p&gt;
-&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;#安装&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm install hexo-symbols-count-time&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# 配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;symbols_count_time:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  symbols: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  time: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  total_symbols: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  total_time: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  exclude_codeblock: false&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  awl: 4&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  wpm: 275&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  suffix: &amp;quot;mins.&amp;quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;hexo-feed：&lt;/p&gt;
-&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;#安装&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npm install hexo-feed --save-dev&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# 配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;feed:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    limit: 20&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    order_by: &amp;quot;-date&amp;quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    tag_dir: false&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    category_dir: false&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    rss:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        enable: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        template: &amp;quot;themes&amp;#x2F;shoka&amp;#x2F;layout&amp;#x2F;_alternate&amp;#x2F;rss.ejs&amp;quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        output: &amp;quot;rss.xml&amp;quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    atom:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        enable: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        template: &amp;quot;themes&amp;#x2F;shoka&amp;#x2F;layout&amp;#x2F;_alternate&amp;#x2F;atom.ejs&amp;quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        output: &amp;quot;atom.xml&amp;quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    jsonFeed:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        enable: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        template: &amp;quot;themes&amp;#x2F;shoka&amp;#x2F;layout&amp;#x2F;_alternate&amp;#x2F;json.ejs&amp;quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        output: &amp;quot;feed.json&amp;quot;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;基本配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本配置&#34;&gt;#&lt;/a&gt; 基本配置&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;Step.2 基本配置 - Theme Shoka Documentation - 二进制杂谈 - 计算机科学 | Yume Shoka = 優萌初華 = 有夢書架&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;界面显示&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#界面显示&#34;&gt;#&lt;/a&gt; 界面显示&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5Lw==&#34;&gt;Step.3 界面显示 - Theme Shoka Documentation - 二进制杂谈 - 计算机科学 | Yume Shoka = 優萌初華 = 有夢書架&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;主题特殊功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主题特殊功能&#34;&gt;#&lt;/a&gt; 主题特殊功能&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9zcGVjaWFsLw==&#34;&gt;Step.4 主题特殊功能 - Theme Shoka Documentation - 二进制杂谈 - 计算机科学 | Yume Shoka = 優萌初華 = 有夢書架&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;hexo全局配置文件_configyml详解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo全局配置文件_configyml详解&#34;&gt;#&lt;/a&gt; Hexo 全局配置文件_config.yml 详解&lt;/h2&gt;
-&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# Hexo Configuration&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;## Docs: http:&amp;#x2F;&amp;#x2F;hexo.io&amp;#x2F;docs&amp;#x2F;configuration.html&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;## Source: https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;hexojs&amp;#x2F;hexo&amp;#x2F;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# Site 站点配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;title: Hexo-demo #网站标题&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;subtitle: hexo is simple and easy to study #网站副标题&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;description: this is hexo-demo #网栈描述&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;author: pomy #你的名字&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;language: zh-CN #网站使用的语言&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;timezone: Asia&amp;#x2F;Shanghai #网站时区&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# URL #可以不用配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;## If your site is put in a subdirectory, set url as &amp;#39;http:&amp;#x2F;&amp;#x2F;yoursite.com&amp;#x2F;child&amp;#39; and root as &amp;#39;&amp;#x2F;child&amp;#x2F;&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;url: http:&amp;#x2F;&amp;#x2F;yoursite.com #网址，搜索时会在搜索引擎中显示&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;root: &amp;#x2F; #网站根目录&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;permalink: :year&amp;#x2F;:month&amp;#x2F;:day&amp;#x2F;:title&amp;#x2F; #永久链接格式&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;permalink_defaults: #永久链接中各部分的默认值&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# Directory 目录配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;source_dir: source #资源文件夹，这个文件夹用来存放内容&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;public_dir: public #公共文件夹，这个文件夹用于存放生成的站点文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tag_dir: tags #标签文件夹&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;archive_dir: archives #归档文件夹&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;category_dir: categories #分类文件夹&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;code_dir: downloads&amp;#x2F;code #Include code 文件夹&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;i18n_dir: :lang #国际化文件夹&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;skip_render: #跳过指定文件的渲染，您可使用 glob 来配置路径&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# Writing 写作配置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;new_post_name: :title.md # 新文章的文件名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;default_layout: post #默认布局&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;titlecase: false # Transform title into titlecase&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;external_link: true # Open external links in new tab&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;filename_case: 0 #把文件名称转换为 (1) 小写或 (2) 大写&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;render_drafts: false #显示草稿&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;post_asset_folder: false #是否启动资源文件夹&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;relative_link: false #把链接改为与根目录的相对位址&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;35&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;future: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;36&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;highlight: #代码块的设置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;37&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;enable: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;38&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;line_number: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;39&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;auto_detect: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;40&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tab_replace:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;41&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# Category &amp;amp; Tag 分类 &amp;amp; 标签&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;42&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;default_category: uncategorized #默认分类&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;43&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;category_map: #分类别名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;44&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tag_map: #标签别名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;45&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# Date &amp;#x2F; Time format 时间和日期&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;46&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;## Hexo uses Moment.js to parse and display date&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;47&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;## You can customize the date format as defined in&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;48&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;## http:&amp;#x2F;&amp;#x2F;momentjs.com&amp;#x2F;docs&amp;#x2F;#&amp;#x2F;displaying&amp;#x2F;format&amp;#x2F;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;49&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;date_format: YYYY-MM-DD&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;50&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;time_format: HH:mm:ss&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;51&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# Pagination 分页&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;52&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;## Set per_page to 0 to disable pagination&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;53&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;per_page: 10 #每页显示的文章量 (0 &amp;#x3D; 关闭分页功能)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;54&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;pagination_dir: page #分页目录&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;55&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# Extensions 扩展&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;56&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;## Plugins: http:&amp;#x2F;&amp;#x2F;hexo.io&amp;#x2F;plugins&amp;#x2F; 插件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;57&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;## Themes: http:&amp;#x2F;&amp;#x2F;hexo.io&amp;#x2F;themes&amp;#x2F; 主题&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;58&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;theme: landscape #当前主题名称&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;59&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# Deployment #部署到 github&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;60&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;## Docs: http:&amp;#x2F;&amp;#x2F;hexo.io&amp;#x2F;docs&amp;#x2F;deployment.html&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;61&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;deploy:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;62&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;type:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;其他hexo主题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#其他hexo主题&#34;&gt;#&lt;/a&gt; 其他 Hexo 主题&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0&#34;&gt;NexT&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2JsaW5rZm94L2hleG8tdGhlbWUtbWF0ZXJ5&#34;&gt;Matery&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2ZsdWlkLWRldi9oZXhvLXRoZW1lLWZsdWlk&#34;&gt;Fluid&lt;/span&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://zengshengli775.gitee.io/2021/08/09/%E5%8D%9A%E5%AE%A2/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</guid>
-            <title>搭建Hexo博客</title>
-            <link>https://zengshengli775.gitee.io/2021/08/09/%E5%8D%9A%E5%AE%A2/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</link>
-            <category term="博客" scheme="https://zengshengli775.gitee.io/categories/%E5%8D%9A%E5%AE%A2/" />
-            <category term="Hexo" scheme="https://zengshengli775.gitee.io/tags/Hexo/" />
-            <category term="配置" scheme="https://zengshengli775.gitee.io/tags/%E9%85%8D%E7%BD%AE/" />
-            <pubDate>Mon, 09 Aug 2021 14:04:29 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;#安装 Nodejs&lt;br&gt;
-node -v	# 查看 node 版本&lt;br&gt;
- npm -v	# 查看 npm 版本&lt;br&gt;
- npm install -g cnpm --registry=http://registry.npm.taobao.org	# 安装淘宝的 cnpm 管理器&lt;br&gt;
- cnpm -v	# 查看 cnpm 版本&lt;br&gt;
- cnpm install -g hexo-cli    #安装 hexo 框架&lt;br&gt;
- hexo -v	# 查看 hexo 版本&lt;br&gt;
- mkdir blog	# 创建 blog 目录&lt;br&gt;
- cd blog	 #进入 blog 目录&lt;br&gt;
- sudo hexo init 	# 生成博客 初始化博客&lt;br&gt;
- hexo s	# 启动本地博客服务&lt;br&gt;
-&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xvY2FsaG9zdDo0MDAwLw==&#34;&gt; http://localhost:4000/&lt;/span&gt;	# 本地访问地址&lt;br&gt;
- hexo n 我的第一篇文章 #创建新的文章&lt;br&gt;
- #返回 blog 目录&lt;br&gt;
- hexo clean #清理&lt;br&gt;
- hexo g #生成&lt;/p&gt;
-&lt;p&gt;#Github 创建一个新的仓库 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL1lvdXJHaXRodWJOYW1lLmdpdGh1Yi5pbw==&#34;&gt;YourGithubName.github.io&lt;/span&gt;&lt;br&gt;
-cnpm install --save hexo-deployer-git #在 blog 目录下安装 git 部署插件&lt;br&gt;
- ----&lt;br&gt;
-# 配置_config.yml&lt;/p&gt;
-&lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# Deployment&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;## Docs: https:&amp;#x2F;&amp;#x2F;hexo.io&amp;#x2F;docs&amp;#x2F;deployment.html&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;deploy:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  type: git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 	repo: https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;YourGithubName&amp;#x2F;YourGithubName.github.io.git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  branch: master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;-----&lt;br&gt;
-hexo d	# 部署到 Github 仓库里&lt;br&gt;
-&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9Zb3VyR2l0aHViTmFtZS5naXRodWIuaW8v&#34;&gt; https://YourGithubName.github.io/&lt;/span&gt;  #访问这个地址可以查看博客&lt;/p&gt;
-&lt;p&gt;git clone &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2xpdHRlbi9oZXhvLXRoZW1lLXlpbGlhLmdpdA==&#34;&gt;https://github.com/litten/hexo-theme-yilia.git&lt;/span&gt; themes/yilia  #下载 yilia 主题到本地&lt;/p&gt;
-&lt;p&gt;#修改 hexo 根目录下的 _config.yml 文件 ： theme: yilia&lt;/p&gt;
-&lt;p&gt;hexo c	# 清理一下&lt;br&gt;
- hexo g	# 生成&lt;br&gt;
- hexo d	# 部署到远程 Github 仓库&lt;br&gt;
-&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9Zb3VyR2l0aHViTmFtZS5naXRodWIuaW8v&#34;&gt; https://YourGithubName.github.io/&lt;/span&gt;  #查看博客&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
