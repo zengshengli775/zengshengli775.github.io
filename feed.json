@@ -7,17 +7,6 @@
     "home_page_url": "https://zengshengli775.gitee.io",
     "items": [
         {
-            "id": "https://zengshengli775.gitee.io/2021/08/26/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/PS4%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91/",
-            "url": "https://zengshengli775.gitee.io/2021/08/26/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/PS4%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91/",
-            "title": "PS4魔法上网",
-            "date_published": "2021-08-25T16:00:00.000Z",
-            "content_html": "<h2 id=\"ps4魔法上网\"><a class=\"anchor\" href=\"#ps4魔法上网\">#</a> PS4 魔法上网</h2>\n<p>PS4 使用 S-S-H 或者 v-2-ray 来代理需要满足 2 个条件：</p>\n<p>一台 Windows 系统的电脑</p>\n<p>当然，你还是得有一台 PS4。</p>\n<p><strong>配置直接确保你 S-S-H 帐号在电脑端能正常使用，PS4 是使用电脑共享的网络使用 S-S-H 账号的，PS4 使用期间电脑必须开机联网打开 S-S-H。并且电脑和 PS4 必须在一个局域网内（可以理解成使用同一个路由器或者连接同一个 Wifi）。</strong></p>\n<p>首先在电脑的 S-S-H 客户端里面启用 “允许来自局域网的连接”，如下图：</p>\n<p><img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1eggg6lj605u06vt9g02.jpg\" alt=\"QQ截图20170209203835.png\" /></p>\n<p>如果是 v-2-ray：</p>\n<p><img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1eggrayj60bz04ywf102.jpg\" alt=\"20200313202458.png\" /></p>\n<p>然后查看一下电脑的局域网 IP 地址。具体做法是用 Win 键 + R 快捷键调出 “运行” 窗口，在此窗口中输入 CMD 然后确定，调出命令窗口。在命令窗口中输入 ipconfig 然后回车。 ipconfig 会显示出电脑的 IP 地址等信息。类似下图，从中可以看到电脑的 IP 地址。<img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egtwnjj60fw07v0tq02.jpg\" alt=\"007QGucbly1gtu1egtwnjj60fw07v0tq02\" /></p>\n<p>记住自己电脑的 IP 之后我们就去 PS4 配置了。</p>\n<p>打开设定：<img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egt2ctj61120kvqaq02.jpg\" alt=\"007QGucbly1gtu1egt2ctj61120kvqaq02\" /></p>\n<p>选择网络：</p>\n<p><img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egs7apj61120kvq8t02.jpg\" alt=\"QQ图片20170209204406-e1486644280927.jpg\" /></p>\n<p>设置网络连接：</p>\n<p><img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egs98ij61120kv7b002.jpg\" alt=\"QQ图片20170209204531-e1486644393760.jpg\" /></p>\n<p>选择使用 WIFI（当然你选择 LAN 也可以，都是一样设置，我这里是连 WIFI 就演示 WIFI 的设置方法）</p>\n<p><img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egoccej61120kvq7002.jpg\" alt=\"QQ图片20170209204721-e1486644459190.jpg\" /></p>\n<p>然后选择自定：</p>\n<p><img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egjkn0j61120kv0vw02.jpg\" alt=\"QQ图片20170209205232-e1486645001710.jpg\" /></p>\n<p>选择你家的 WIFI：</p>\n<p><img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egkr6cj61120kvjua02.jpg\" alt=\"QQ图片20170209205239-e1486644893500.jpg\" /></p>\n<p>IP 地址设定这里选择自动：</p>\n<p><img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egmkjnj61120kv0zn02.jpg\" alt=\"QQ图片20170209205242-e1486644902608.jpg\" /></p>\n<p>DHCP Host Name 这里默认不指定：<img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egteewj61120kvteg02.jpg\" alt=\"007QGucbly1gtu1egteewj61120kvteg02\" /></p>\n<p>DNS 设定也是默认自动：<img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egu0u4j61120kvwiw02.jpg\" alt=\"007QGucbly1gtu1egu0u4j61120kvwiw02\" /></p>\n<p>MTU 自动：<img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egqpzaj61120kvtcq02.jpg\" alt=\"007QGucbly1gtu1egqpzaj61120kvtcq02\" /></p>\n<p>Proxy (代理) 服务器这里选择<strong>使用：</strong></p>\n<p><img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egob81j61120kvgnz02.jpg\" alt=\"007QGucbly1gtu1egob81j61120kvgnz02\" /></p>\n<p><strong>然后地址填你电脑的 IP，前面有说，Port (端口) 码填 1080，一般默认是 1080</strong>，（如果是 v-2-ray，这里应该是 10808）如图：<img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egmvdcj61120kv76q02.jpg\" alt=\"007QGucbly1gtu1egmvdcj61120kv76q02\" /></p>\n<p>然后点继续，会提示已更新网络设置：<img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egln6bj61120kv3zw02.jpg\" alt=\"007QGucbly1gtu1egln6bj61120kv3zw02\" /></p>\n<p>然后测试一下就好了，全部 OK 就设置完毕了～<img data-src=\"http://ww1.sinaimg.cn/large/007QGucbly1gtu1egjvepj61120kv76f02.jpg\" alt=\"007QGucbly1gtu1egjvepj61120kv76f02\" /></p>\n<p>这个时候 PS4 已经完成魔法上网了。</p>\n",
-            "tags": [
-                "实用技巧",
-                "PS4"
-            ]
-        },
-        {
             "id": "https://zengshengli775.gitee.io/2021/08/26/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/",
             "url": "https://zengshengli775.gitee.io/2021/08/26/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/",
             "title": "机器学习基础",
@@ -232,6 +221,18 @@
                 "游戏",
                 "小说",
                 "漫画"
+            ]
+        },
+        {
+            "id": "https://zengshengli775.gitee.io/2021/08/10/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/PDF%E4%B9%A6%E7%B1%8D%E4%BB%A3%E6%89%BE/",
+            "url": "https://zengshengli775.gitee.io/2021/08/10/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/PDF%E4%B9%A6%E7%B1%8D%E4%BB%A3%E6%89%BE/",
+            "title": "PDF书籍代找",
+            "date_published": "2021-08-10T15:19:23.000Z",
+            "content_html": "<h2 id=\"图书互助\"><a class=\"anchor\" href=\"#图书互助\">#</a> 图书互助</h2>\n<p>安装 Greasyfork 脚本：</p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9ncmVhc3lmb3JrLm9yZy96aC1DTi9zY3JpcHRzLzQyMDc1MS0lRTUlOUIlQkUlRTQlQjklQTYlRTQlQkElOTIlRTUlOEElQTk=\">图书互助</span></p>\n<p>查询全国图书馆参考咨询联盟：</p>\n<p><span class=\"exturl\" data-url=\"aHR0cDovL3d3dy51Y2Rycy5zdXBlcmxpYi5uZXQv\">全国图书馆参考咨询联盟</span></p>\n<p>或者查询互助联盟：</p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cucmVhZGVyc3RlYW0uY29tLw==\">互助联盟</span></p>\n<p>参考阿虚同学公众号文章：</p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3M/X19iaXo9TXpBNU5qRXdOakUwT1E9PSZhbXA7bWlkPTIyNDc0OTQ0MDImYW1wO2lkeD0xJmFtcDtzbj1mYWVjOGJmZWY1OGU1YjZjZThkOWM4NzRlMzZhNGRlOSZhbXA7Y2hrc209OTBiNzg4YzhhN2MwMDFkZTk4YTY3YmVmOWVmNzBlM2E3ZGEyM2IwNjQ3ZjFkNTA4N2ZhMmVlZjI0YjBlMzEyNzMwMTYyZTVjZmI5YiNyZCZhbXA7cmQyd2VyZD0xI3dlY2hhdF9yZWRpcmVjdA==\">淘宝书商为啥什么书都能找到：揭秘代找 PDF 背后的真相</span></p>\n<h2 id=\"找书网站\"><a class=\"anchor\" href=\"#找书网站\">#</a> 找书网站</h2>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cuaml1bW9kaWFyeS5jb20v\">Jiumo Search</span></p>\n<p><span class=\"exturl\" data-url=\"aHR0cDovL3d3dy43c2Vib29rLmNvbS9kaXNr\">七秒电子书</span></p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9lYm9vazIubG9yZWZyZWUuY29tLw==\">LoreFree - 去中心化免费电子书共享社区</span></p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cueGlhb3NvLm5ldC8=\">小不点搜索 - 正版资源搜索引擎 - 好资源一网打尽</span></p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly93d3cueGlhb3podWt1YWlwYW4uY29tLw==\">小猪快盘 - 网盘搜索 - 首页</span></p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL3hqcTcvYm9va3M=\">电子书 (计算机类，经济学，数学), 格式，pdf、mobi、epub</span></p>\n<p><span class=\"exturl\" data-url=\"aHR0cDovL3NodXhpYW5namlhLmNuLw==\">书享家 - 电子书下载导航</span></p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL0phY2tleUxlYS9OSlVDUw==\">2021 南京大学计算机科学与技术 845 考研公共课和专业课资料</span></p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9kb2NzLnFxLmNvbS9zaGVldC9EVW0xQmEydFphME51VUZabj90YWI9dHBjbWox\">大学生常用软件、软件教程及干货资料（持续更新）</span></p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL25lb25taWtlLzQwOA==\"> 计算机专业课（408）思维导图和笔记</span></p>\n",
+            "tags": [
+                "学习工具",
+                "找书网站",
+                "图书互助"
             ]
         }
     ]
