@@ -44,6 +44,48 @@
             <description><![CDATA[  ]]></description>
         </item>
         <item>
+            <guid isPermalink="true">https://zengshengli775.gitee.io/2021/08/26/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/PS4%E4%BB%A3%E7%90%86%E4%B8%8A%E7%BD%91/</guid>
+            <title>PS4代理上网</title>
+            <link>https://zengshengli775.gitee.io/2021/08/26/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/PS4%E4%BB%A3%E7%90%86%E4%B8%8A%E7%BD%91/</link>
+            <category term="实用技巧" scheme="https://zengshengli775.gitee.io/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" />
+            <category term="PS4" scheme="https://zengshengli775.gitee.io/tags/PS4/" />
+            <pubDate>Thu, 26 Aug 2021 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;ps4代理上网&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ps4代理上网&#34;&gt;#&lt;/a&gt; PS4 代理上网&lt;/h2&gt;
+&lt;p&gt;PS4 使用 SS 或者 v2ray 来代理需要满足 2 个条件：&lt;/p&gt;
+&lt;p&gt;一台 Windows 系统的电脑&lt;/p&gt;
+&lt;p&gt;当然，你还是得有一台 PS4。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;配置直接确保你 SS 帐号在电脑端能正常使用，PS4 是使用电脑共享的网络使用 SS 账号的，PS4 使用期间电脑必须开机联网打开 SS。并且电脑和 PS4 必须在一个局域网内（可以理解成使用同一个路由器或者连接同一个 Wifi）。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;首先在电脑的 SS 客户端里面启用 “允许来自局域网的连接”，如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1eggg6lj605u06vt9g02.jpg&#34; alt=&#34;QQ截图20170209203835.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果是 v2ray：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1eggrayj60bz04ywf102.jpg&#34; alt=&#34;20200313202458.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;然后查看一下电脑的局域网 IP 地址。具体做法是用 Win 键 + R 快捷键调出 “运行” 窗口，在此窗口中输入 CMD 然后确定，调出命令窗口。在命令窗口中输入 ipconfig 然后回车。 ipconfig 会显示出电脑的 IP 地址等信息。类似下图，从中可以看到电脑的 IP 地址。&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egtwnjj60fw07v0tq02.jpg&#34; alt=&#34;007QGucbly1gtu1egtwnjj60fw07v0tq02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;记住自己电脑的 IP 之后我们就去 PS4 配置了。&lt;/p&gt;
+&lt;p&gt;打开设定：&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egt2ctj61120kvqaq02.jpg&#34; alt=&#34;007QGucbly1gtu1egt2ctj61120kvqaq02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;选择网络：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egs7apj61120kvq8t02.jpg&#34; alt=&#34;QQ图片20170209204406-e1486644280927.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;设置网络连接：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egs98ij61120kv7b002.jpg&#34; alt=&#34;QQ图片20170209204531-e1486644393760.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;选择使用 WIFI（当然你选择 LAN 也可以，都是一样设置，我这里是连 WIFI 就演示 WIFI 的设置方法）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egoccej61120kvq7002.jpg&#34; alt=&#34;QQ图片20170209204721-e1486644459190.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;然后选择自定：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egjkn0j61120kv0vw02.jpg&#34; alt=&#34;QQ图片20170209205232-e1486645001710.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;选择你家的 WIFI：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egkr6cj61120kvjua02.jpg&#34; alt=&#34;QQ图片20170209205239-e1486644893500.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;IP 地址设定这里选择自动：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egmkjnj61120kv0zn02.jpg&#34; alt=&#34;QQ图片20170209205242-e1486644902608.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;DHCP Host Name 这里默认不指定：&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egteewj61120kvteg02.jpg&#34; alt=&#34;007QGucbly1gtu1egteewj61120kvteg02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;DNS 设定也是默认自动：&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egu0u4j61120kvwiw02.jpg&#34; alt=&#34;007QGucbly1gtu1egu0u4j61120kvwiw02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;MTU 自动：&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egqpzaj61120kvtcq02.jpg&#34; alt=&#34;007QGucbly1gtu1egqpzaj61120kvtcq02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Proxy (代理) 服务器这里选择&lt;strong&gt;使用：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egob81j61120kvgnz02.jpg&#34; alt=&#34;007QGucbly1gtu1egob81j61120kvgnz02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;然后地址填你电脑的 IP，前面有说，Port (端口) 码填 1080，一般默认是 1080&lt;/strong&gt;，（如果是 v2ray，这里应该是 10808）如图：&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egmvdcj61120kv76q02.jpg&#34; alt=&#34;007QGucbly1gtu1egmvdcj61120kv76q02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;然后点继续，会提示已更新网络设置：&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egln6bj61120kv3zw02.jpg&#34; alt=&#34;007QGucbly1gtu1egln6bj61120kv3zw02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;然后测试一下就好了，全部 OK 就设置完毕了～&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egjvepj61120kv76f02.jpg&#34; alt=&#34;007QGucbly1gtu1egjvepj61120kv76f02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;这个时候 PS4 已经完成代理上网了。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">https://zengshengli775.gitee.io/2021/08/25/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/Mac%20VScode%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
             <title>Mac VScode快捷键</title>
             <link>https://zengshengli775.gitee.io/2021/08/25/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/Mac%20VScode%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
@@ -394,6 +436,9 @@ a 存储单元中的数据可以是一个普通数值，也可以是另一个存
 &lt;p&gt;3 表示最小输出 3 位数字。&lt;/p&gt;
 &lt;p&gt;0 表示如果数字不足 3 位，在左边用 0 补成 3 位。&lt;/p&gt;
 &lt;p&gt;如 printf (&amp;quot;%03d&amp;quot;, 1); 会打印出 001&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;printf(&amp;quot;%.10f&amp;quot;,out)&lt;/strong&gt;;&lt;/p&gt;
+&lt;p&gt;f 表示浮点数&lt;/p&gt;
+&lt;p&gt;.10 表示输出 10 位&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -834,36 +879,6 @@ a 存储单元中的数据可以是一个普通数值，也可以是另一个存
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5iYWloZWhoLnh5ei9iaW5wL3dtYWluL21hbmdhbGlzdC5waHA/Y29uZmlybT15ZXM=&#34;&gt;百合汉化平台&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tb3gubW9lLw==&#34;&gt;Mox.moe [Kindle 漫畫 | Kobo 漫畫 | epub 漫畫] [mox.moe]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5raW5kbGVjb21pYy5uZXQv&#34;&gt;kindle 漫画 | 再也不用到处找漫画了&lt;/span&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://zengshengli775.gitee.io/2021/08/10/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/PDF%E4%B9%A6%E7%B1%8D%E4%BB%A3%E6%89%BE/</guid>
-            <title>PDF书籍代找</title>
-            <link>https://zengshengli775.gitee.io/2021/08/10/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/PDF%E4%B9%A6%E7%B1%8D%E4%BB%A3%E6%89%BE/</link>
-            <category term="学习工具" scheme="https://zengshengli775.gitee.io/categories/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/" />
-            <category term="找书网站" scheme="https://zengshengli775.gitee.io/tags/%E6%89%BE%E4%B9%A6%E7%BD%91%E7%AB%99/" />
-            <category term="图书互助" scheme="https://zengshengli775.gitee.io/tags/%E5%9B%BE%E4%B9%A6%E4%BA%92%E5%8A%A9/" />
-            <pubDate>Tue, 10 Aug 2021 23:19:23 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;图书互助&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图书互助&#34;&gt;#&lt;/a&gt; 图书互助&lt;/h2&gt;
-&lt;p&gt;安装 Greasyfork 脚本：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ncmVhc3lmb3JrLm9yZy96aC1DTi9zY3JpcHRzLzQyMDc1MS0lRTUlOUIlQkUlRTQlQjklQTYlRTQlQkElOTIlRTUlOEElQTk=&#34;&gt;图书互助&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;查询全国图书馆参考咨询联盟：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy51Y2Rycy5zdXBlcmxpYi5uZXQv&#34;&gt;全国图书馆参考咨询联盟&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;或者查询互助联盟：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucmVhZGVyc3RlYW0uY29tLw==&#34;&gt;互助联盟&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;参考阿虚同学公众号文章：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3M/X19iaXo9TXpBNU5qRXdOakUwT1E9PSZhbXA7bWlkPTIyNDc0OTQ0MDImYW1wO2lkeD0xJmFtcDtzbj1mYWVjOGJmZWY1OGU1YjZjZThkOWM4NzRlMzZhNGRlOSZhbXA7Y2hrc209OTBiNzg4YzhhN2MwMDFkZTk4YTY3YmVmOWVmNzBlM2E3ZGEyM2IwNjQ3ZjFkNTA4N2ZhMmVlZjI0YjBlMzEyNzMwMTYyZTVjZmI5YiNyZCZhbXA7cmQyd2VyZD0xI3dlY2hhdF9yZWRpcmVjdA==&#34;&gt;淘宝书商为啥什么书都能找到：揭秘代找 PDF 背后的真相&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;找书网站&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#找书网站&#34;&gt;#&lt;/a&gt; 找书网站&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuaml1bW9kaWFyeS5jb20v&#34;&gt;Jiumo Search&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy43c2Vib29rLmNvbS9kaXNr&#34;&gt;七秒电子书&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lYm9vazIubG9yZWZyZWUuY29tLw==&#34;&gt;LoreFree - 去中心化免费电子书共享社区&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueGlhb3NvLm5ldC8=&#34;&gt;小不点搜索 - 正版资源搜索引擎 - 好资源一网打尽&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueGlhb3podWt1YWlwYW4uY29tLw==&#34;&gt;小猪快盘 - 网盘搜索 - 首页&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3hqcTcvYm9va3M=&#34;&gt;电子书 (计算机类，经济学，数学), 格式，pdf、mobi、epub&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3NodXhpYW5namlhLmNuLw==&#34;&gt;书享家 - 电子书下载导航&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0phY2tleUxlYS9OSlVDUw==&#34;&gt;2021 南京大学计算机科学与技术 845 考研公共课和专业课资料&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLnFxLmNvbS9zaGVldC9EVW0xQmEydFphME51VUZabj90YWI9dHBjbWox&#34;&gt;大学生常用软件、软件教程及干货资料（持续更新）&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL25lb25taWtlLzQwOA==&#34;&gt; 计算机专业课（408）思维导图和笔记&lt;/span&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
