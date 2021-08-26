@@ -42,16 +42,16 @@
     </entry>
     <entry>
         <id>https://zengshengli775.gitee.io/2021/08/26/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/PS4%E4%BB%A3%E7%90%86%E4%B8%8A%E7%BD%91/</id>
-        <title>PS4代理上网</title>
+        <title>PS4科学上网</title>
         <link rel="alternate" href="https://zengshengli775.gitee.io/2021/08/26/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/PS4%E4%BB%A3%E7%90%86%E4%B8%8A%E7%BD%91/"/>
-        <content type="html">&lt;h2 id=&#34;ps4代理上网&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ps4代理上网&#34;&gt;#&lt;/a&gt; PS4 代理上网&lt;/h2&gt;
-&lt;p&gt;PS4 使用 SS 或者 v2ray 来代理需要满足 2 个条件：&lt;/p&gt;
+        <content type="html">&lt;h2 id=&#34;ps4科学上网&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ps4科学上网&#34;&gt;#&lt;/a&gt; PS4 科学上网&lt;/h2&gt;
+&lt;p&gt;PS4 使用 S-S-H 或者 v-2-ray 来代理需要满足 2 个条件：&lt;/p&gt;
 &lt;p&gt;一台 Windows 系统的电脑&lt;/p&gt;
 &lt;p&gt;当然，你还是得有一台 PS4。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;配置直接确保你 SS 帐号在电脑端能正常使用，PS4 是使用电脑共享的网络使用 SS 账号的，PS4 使用期间电脑必须开机联网打开 SS。并且电脑和 PS4 必须在一个局域网内（可以理解成使用同一个路由器或者连接同一个 Wifi）。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;首先在电脑的 SS 客户端里面启用 “允许来自局域网的连接”，如下图：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;配置直接确保你 S-S-H 帐号在电脑端能正常使用，PS4 是使用电脑共享的网络使用 S-S-H 账号的，PS4 使用期间电脑必须开机联网打开 S-S-H。并且电脑和 PS4 必须在一个局域网内（可以理解成使用同一个路由器或者连接同一个 Wifi）。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;首先在电脑的 S-S-H 客户端里面启用 “允许来自局域网的连接”，如下图：&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1eggg6lj605u06vt9g02.jpg&#34; alt=&#34;QQ截图20170209203835.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;如果是 v2ray：&lt;/p&gt;
+&lt;p&gt;如果是 v-2-ray：&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1eggrayj60bz04ywf102.jpg&#34; alt=&#34;20200313202458.png&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;然后查看一下电脑的局域网 IP 地址。具体做法是用 Win 键 + R 快捷键调出 “运行” 窗口，在此窗口中输入 CMD 然后确定，调出命令窗口。在命令窗口中输入 ipconfig 然后回车。 ipconfig 会显示出电脑的 IP 地址等信息。类似下图，从中可以看到电脑的 IP 地址。&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egtwnjj60fw07v0tq02.jpg&#34; alt=&#34;007QGucbly1gtu1egtwnjj60fw07v0tq02&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;记住自己电脑的 IP 之后我们就去 PS4 配置了。&lt;/p&gt;
@@ -73,10 +73,10 @@
 &lt;p&gt;MTU 自动：&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egqpzaj61120kvtcq02.jpg&#34; alt=&#34;007QGucbly1gtu1egqpzaj61120kvtcq02&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Proxy (代理) 服务器这里选择&lt;strong&gt;使用：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egob81j61120kvgnz02.jpg&#34; alt=&#34;007QGucbly1gtu1egob81j61120kvgnz02&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;然后地址填你电脑的 IP，前面有说，Port (端口) 码填 1080，一般默认是 1080&lt;/strong&gt;，（如果是 v2ray，这里应该是 10808）如图：&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egmvdcj61120kv76q02.jpg&#34; alt=&#34;007QGucbly1gtu1egmvdcj61120kv76q02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;然后地址填你电脑的 IP，前面有说，Port (端口) 码填 1080，一般默认是 1080&lt;/strong&gt;，（如果是 v-2-ray，这里应该是 10808）如图：&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egmvdcj61120kv76q02.jpg&#34; alt=&#34;007QGucbly1gtu1egmvdcj61120kv76q02&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;然后点继续，会提示已更新网络设置：&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egln6bj61120kv3zw02.jpg&#34; alt=&#34;007QGucbly1gtu1egln6bj61120kv3zw02&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;然后测试一下就好了，全部 OK 就设置完毕了～&lt;img data-src=&#34;http://ww1.sinaimg.cn/large/007QGucbly1gtu1egjvepj61120kv76f02.jpg&#34; alt=&#34;007QGucbly1gtu1egjvepj61120kv76f02&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;这个时候 PS4 已经完成代理上网了。&lt;/p&gt;
+&lt;p&gt;这个时候 PS4 已经完成科学上网了。&lt;/p&gt;
 </content>
         <category term="实用技巧" scheme="https://zengshengli775.gitee.io/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" />
         <category term="PS4" scheme="https://zengshengli775.gitee.io/tags/PS4/" />
