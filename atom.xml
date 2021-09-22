@@ -8,21 +8,50 @@
     <author>
       <name>lzs</name>
     </author>
-    <updated>2021-08-30T16:00:00.000Z</updated>
+    <updated>2021-09-21T16:00:00.000Z</updated>
     <category term="博客" />
     <category term="主题" />
     <category term="编程" />
     <category term="笔记" />
     <entry>
-        <id>https://zengshengli775.gitee.io/2021/08/31/%E9%9A%8F%E7%AC%94/2021%E5%B9%B4%E7%85%A7%E7%89%87%E9%9A%8F%E7%AC%94/</id>
-        <title>2021年照片随笔</title>
-        <link rel="alternate" href="https://zengshengli775.gitee.io/2021/08/31/%E9%9A%8F%E7%AC%94/2021%E5%B9%B4%E7%85%A7%E7%89%87%E9%9A%8F%E7%AC%94/"/>
-        <content type="html">&lt;p&gt;将平时偶然间的所闻所感以文字记录，分享为图片，上传到 QQ 空间后，每一年在博客上汇总这些图片。&lt;/p&gt;
+        <id>https://zengshengli775.gitee.io/2021/09/22/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/%E4%B8%AD%E6%96%87PDF%E7%94%B5%E5%AD%90%E4%B9%A6%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E4%B9%A6%E7%AD%BE/</id>
+        <title>中文PDF电子书自动添加书签</title>
+        <link rel="alternate" href="https://zengshengli775.gitee.io/2021/09/22/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/%E4%B8%AD%E6%96%87PDF%E7%94%B5%E5%AD%90%E4%B9%A6%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E4%B9%A6%E7%AD%BE/"/>
+        <content type="html">&lt;h2 id=&#34;1-找到对应书籍的ss号&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-找到对应书籍的ss号&#34;&gt;#&lt;/a&gt; 1. 找到对应书籍的 ss 号&lt;/h2&gt;
+&lt;p&gt;首先要登录全国图书馆参考咨询联盟（&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHAlM0EvL3d3dy51Y2Rycy5zdXBlcmxpYi5uZXQv&#34;&gt;http://www.ucdrs.superlib.net/&lt;/span&gt;），这里是查找书籍 ss 号的地点。我们将需要这个 ss 号来获取对应制作好的书签。&lt;img data-src=&#34;http://tva1.sinaimg.cn/large/007QGucbly1guphprws0lj60r609yaas02.jpg&#34; alt=&#34;007QGucbly1guphprws0lj60r609yaas02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;检索自己的书籍。这里有一个要注意的点：很多书籍经过了多次印刷，即使是同一个名字，其内容都有些微的不同。为了找到确切唯一的，你手上的 PDF 电子书，请到 PDF 的前几页找到这个 CIP 数据。其中的 ISBN 码，每一本书只有专属的一个。&lt;img data-src=&#34;http://tva1.sinaimg.cn/large/007QGucbly1guphprw9y4j60d803uzki02.jpg&#34; alt=&#34;007QGucbly1guphprw9y4j60d803uzki02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;看，现在检索出来的书就是 PDF 文件对应的那本书了。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://tva1.sinaimg.cn/large/007QGucbly1guphpry6lnj60v007lwha02.jpg&#34; alt=&#34;3.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;来找这本书的 ss 号吧～未来获取书签需要提交该码。点击进入该书，在右侧试读，随便点击一个链接，如 “版权页”。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://tva1.sinaimg.cn/large/007QGucbly1guphprubl6j608r03omx602.jpg&#34; alt=&#34;007QGucbly1guphprubl6j608r03omx602&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;新弹出的网页链接中，就能看到 ss 号了。&lt;img data-src=&#34;http://tva1.sinaimg.cn/large/007QGucbly1guphpruj10j60of02u0t002.jpg&#34; alt=&#34;007QGucbly1guphpruj10j60of02u0t002&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-获取书签信息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-获取书签信息&#34;&gt;#&lt;/a&gt; 2. 获取书签信息&lt;/h2&gt;
+&lt;p&gt;打开书签获取软件 V0505，输入 ss 号，一键获取。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://tva1.sinaimg.cn/large/007QGucbly1guphtt4t37j60f20aiq4d02.jpg&#34; alt=&#34;1.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;进入窗体，Ctrl+A、Ctrl+C，全部复制。&lt;/p&gt;
+&lt;h2 id=&#34;3-往pdf导入书签信息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-往pdf导入书签信息&#34;&gt;#&lt;/a&gt; 3. 往 PDF 导入书签信息&lt;/h2&gt;
+&lt;p&gt;打开 PdgCntEditor，使用该软件打开你要编辑的 PDF 文件，直接在窗体中粘贴书签信息，保存。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://tva1.sinaimg.cn/large/007QGucbly1guphtt52rrj60kv0cxac502.jpg&#34; alt=&#34;2.jpg&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;4-检查效果&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-检查效果&#34;&gt;#&lt;/a&gt; 4. 检查效果&lt;/h2&gt;
+&lt;p&gt;打开后，经过检查，实现了内容和页码的一一对应，效果较好。如有错位问题，再进入 PdgCntEditor 中进行相应修改。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://tva1.sinaimg.cn/large/007QGucbly1guphtt5kk4j60ru0cl0wc02.jpg&#34; alt=&#34;3.jpg&#34; /&gt;&lt;/p&gt;
 </content>
-        <category term="随笔" scheme="https://zengshengli775.gitee.io/categories/%E9%9A%8F%E7%AC%94/" />
-        <category term="随笔" scheme="https://zengshengli775.gitee.io/tags/%E9%9A%8F%E7%AC%94/" />
-        <category term="照片随笔" scheme="https://zengshengli775.gitee.io/tags/%E7%85%A7%E7%89%87%E9%9A%8F%E7%AC%94/" />
-        <updated>2021-08-30T16:00:00.000Z</updated>
+        <category term="学习工具" scheme="https://zengshengli775.gitee.io/categories/%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7/" />
+        <category term="PDF" scheme="https://zengshengli775.gitee.io/tags/PDF/" />
+        <category term="书签" scheme="https://zengshengli775.gitee.io/tags/%E4%B9%A6%E7%AD%BE/" />
+        <updated>2021-09-21T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://zengshengli775.gitee.io/2021/09/01/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/</id>
+        <title>在线工具</title>
+        <link rel="alternate" href="https://zengshengli775.gitee.io/2021/09/01/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/"/>
+        <content type="html">&lt;h2 id=&#34;在线工具&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在线工具&#34;&gt;#&lt;/a&gt; 在线工具&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90b29scy5rYWx2aW5iZy5jbi8=&#34;&gt;Kalvin 在线工具 - 有趣及实用的工具箱&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdXVsbm5rYS5naXRodWIuaW8vQnVsbHNoaXRHZW5lcmF0b3Iv&#34;&gt;狗屁不通文章生成器&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="实用技巧" scheme="https://zengshengli775.gitee.io/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" />
+        <category term="在线工具" scheme="https://zengshengli775.gitee.io/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/" />
+        <updated>2021-08-31T16:00:00.000Z</updated>
     </entry>
     <entry>
         <id>https://zengshengli775.gitee.io/2021/08/29/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/Apple%20Music%E4%BD%BF%E7%94%A8/</id>
@@ -1706,21 +1735,14 @@
         <updated>2021-08-26T16:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.gitee.io/2021/08/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/</id>
-        <title>数据结构与算法基础</title>
-        <link rel="alternate" href="https://zengshengli775.gitee.io/2021/08/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/"/>
-        <content type="html"></content>
-        <category term="数据结构与算法" scheme="https://zengshengli775.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" />
-        <category term="数据结构与算法" scheme="https://zengshengli775.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" />
-        <updated>2021-08-25T16:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://zengshengli775.gitee.io/2021/08/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/</id>
-        <title>深度学习基础</title>
-        <link rel="alternate" href="https://zengshengli775.gitee.io/2021/08/26/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/"/>
-        <content type="html"></content>
-        <category term="深度学习" scheme="https://zengshengli775.gitee.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
-        <category term="深度学习" scheme="https://zengshengli775.gitee.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
+        <id>https://zengshengli775.gitee.io/2021/08/26/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/PS4%E4%BB%A3%E7%90%86%E4%B8%8A%E7%BD%91/</id>
+        <title>PS4代理上网</title>
+        <link rel="alternate" href="https://zengshengli775.gitee.io/2021/08/26/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/PS4%E4%BB%A3%E7%90%86%E4%B8%8A%E7%BD%91/"/>
+        <content type="html">&lt;h2 id=&#34;ps4代理上网&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ps4代理上网&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbWFpbG5jdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzp0Oi9nL3BlcnNvbmFsLzYxMDgxMTkwOTRfZW1haWxfbmN1X2VkdV9jbi9FVUpzc0JPV1pwZElnUWxEVDQ0eFZYUUJjVzZxT1pHcFdpanBJYlFLeDh0NXZBP2U9NEx2MFY3&#34;&gt;PS4 代理上网&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;gitee 净网，有敏感字，无法部署，请转至&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbWFpbG5jdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzp0Oi9nL3BlcnNvbmFsLzYxMDgxMTkwOTRfZW1haWxfbmN1X2VkdV9jbi9FVUpzc0JPV1pwZElnUWxEVDQ0eFZYUUJjVzZxT1pHcFdpanBJYlFLeDh0NXZBP2U9NEx2MFY3&#34;&gt; onedriver&lt;/span&gt; 下载浏览。&lt;/p&gt;
+</content>
+        <category term="实用技巧" scheme="https://zengshengli775.gitee.io/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" />
+        <category term="PS4" scheme="https://zengshengli775.gitee.io/tags/PS4/" />
         <updated>2021-08-25T16:00:00.000Z</updated>
     </entry>
     <entry>
@@ -1733,15 +1755,24 @@
         <updated>2021-08-25T16:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://zengshengli775.gitee.io/2021/08/26/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/PS4%E4%BB%A3%E7%90%86%E4%B8%8A%E7%BD%91/</id>
-        <title>PS4代理上网</title>
-        <link rel="alternate" href="https://zengshengli775.gitee.io/2021/08/26/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/PS4%E4%BB%A3%E7%90%86%E4%B8%8A%E7%BD%91/"/>
-        <content type="html">&lt;h2 id=&#34;ps4代理上网&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ps4代理上网&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbWFpbG5jdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzp0Oi9nL3BlcnNvbmFsLzYxMDgxMTkwOTRfZW1haWxfbmN1X2VkdV9jbi9FVUpzc0JPV1pwZElnUWxEVDQ0eFZYUUJjVzZxT1pHcFdpanBJYlFLeDh0NXZBP2U9NEx2MFY3&#34;&gt;PS4 代理上网&lt;/span&gt;&lt;/h2&gt;
-&lt;p&gt;gitee 净网，有敏感字，无法部署，请转至&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbWFpbG5jdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzp0Oi9nL3BlcnNvbmFsLzYxMDgxMTkwOTRfZW1haWxfbmN1X2VkdV9jbi9FVUpzc0JPV1pwZElnUWxEVDQ0eFZYUUJjVzZxT1pHcFdpanBJYlFLeDh0NXZBP2U9NEx2MFY3&#34;&gt; onedriver&lt;/span&gt; 下载浏览。&lt;/p&gt;
-</content>
-        <category term="实用技巧" scheme="https://zengshengli775.gitee.io/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" />
-        <category term="PS4" scheme="https://zengshengli775.gitee.io/tags/PS4/" />
+        <id>https://zengshengli775.gitee.io/2021/08/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/</id>
+        <title>数据结构与算法基础</title>
+        <link rel="alternate" href="https://zengshengli775.gitee.io/2021/08/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/"/>
+        <content type="html"></content>
+        <category term="数据结构与算法" scheme="https://zengshengli775.gitee.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" />
+        <category term="数据结构与算法" scheme="https://zengshengli775.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" />
         <updated>2021-08-25T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://zengshengli775.gitee.io/2021/08/25/%E7%A7%91%E7%A0%94/%E7%A7%91%E7%A0%94%E6%96%87%E7%8C%AE%E7%BD%91%E7%AB%99/</id>
+        <title>科研文献网站</title>
+        <link rel="alternate" href="https://zengshengli775.gitee.io/2021/08/25/%E7%A7%91%E7%A0%94/%E7%A7%91%E7%A0%94%E6%96%87%E7%8C%AE%E7%BD%91%E7%AB%99/"/>
+        <content type="html">&lt;h2 id=&#34;科研文献网站&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#科研文献网站&#34;&gt;#&lt;/a&gt; 科研文献网站&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc3RvcmthcHAubWUvP3JlZj05MzYxNy0xMQ==&#34;&gt;文献鸟 Stork，您忠实的科研助手，追踪新文献&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="科研" scheme="https://zengshengli775.gitee.io/categories/%E7%A7%91%E7%A0%94/" />
+        <category term="科研文献网站" scheme="https://zengshengli775.gitee.io/tags/%E7%A7%91%E7%A0%94%E6%96%87%E7%8C%AE%E7%BD%91%E7%AB%99/" />
+        <updated>2021-08-24T16:00:00.000Z</updated>
     </entry>
     <entry>
         <id>https://zengshengli775.gitee.io/2021/08/25/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/Mac%20VScode%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
@@ -1761,17 +1792,6 @@
 &lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Ctrl + &amp;#96; 显示终端&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Ctrl + Shift + &amp;#96; 新建终端&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Up 向上滚动&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Down 向下滚动&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;PgUp 向上翻页&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;PgDown 向下翻页&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + Home 滚动到顶部&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Command + End 滚动到底部&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
         <category term="实用技巧" scheme="https://zengshengli775.gitee.io/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" />
         <category term="Mac" scheme="https://zengshengli775.gitee.io/tags/Mac/" />
-        <updated>2021-08-24T16:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://zengshengli775.gitee.io/2021/08/25/%E7%A7%91%E7%A0%94/%E7%A7%91%E7%A0%94%E6%96%87%E7%8C%AE%E7%BD%91%E7%AB%99/</id>
-        <title>科研文献网站</title>
-        <link rel="alternate" href="https://zengshengli775.gitee.io/2021/08/25/%E7%A7%91%E7%A0%94/%E7%A7%91%E7%A0%94%E6%96%87%E7%8C%AE%E7%BD%91%E7%AB%99/"/>
-        <content type="html">&lt;h2 id=&#34;科研文献网站&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#科研文献网站&#34;&gt;#&lt;/a&gt; 科研文献网站&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc3RvcmthcHAubWUvP3JlZj05MzYxNy0xMQ==&#34;&gt;文献鸟 Stork，您忠实的科研助手，追踪新文献&lt;/span&gt;&lt;/p&gt;
-</content>
-        <category term="科研" scheme="https://zengshengli775.gitee.io/categories/%E7%A7%91%E7%A0%94/" />
-        <category term="科研文献网站" scheme="https://zengshengli775.gitee.io/tags/%E7%A7%91%E7%A0%94%E6%96%87%E7%8C%AE%E7%BD%91%E7%AB%99/" />
         <updated>2021-08-24T16:00:00.000Z</updated>
     </entry>
     <entry>
@@ -2137,6 +2157,43 @@ a 存储单元中的数据可以是一个普通数值，也可以是另一个存
 &lt;figure class=&#34;highlight c&#34;&gt;&lt;figcaption data-lang=&#34;c&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 通过指针传递方式，形参为指向实参地址的指针，当对形参的指向操作时，就相当于对实参本身进行的操作。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token macro property&#34;&gt;&lt;span class=&#34;token directive-hash&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;token directive keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&amp;lt;stdio.h&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/* 函数声明 */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;swap&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;y&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;main&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token comment&#34;&gt;/* 局部变量定义 */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;交换前，a 的值： %d\n&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; a &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;交换前，b 的值： %d\n&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; b &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token comment&#34;&gt;/* 调用函数来交换值&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    * &amp;amp;a 表示指向 a 的指针，即变量 a 的地址&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    * &amp;amp;b 表示指向 b 的指针，即变量 b 的地址&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   */&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token function&#34;&gt;swap&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;b&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;交换后，a 的值： %d\n&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; a &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token function&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;交换后，b 的值： %d\n&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; b &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;交换前，a 的值： &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;交换前，b 的值： &lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;交换后，a 的值： &lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;交换后，b 的值： &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;// 引用调用在函数内改变了 a 和 b 的值，实际上也改变了函数外 a 和 b 的值。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;code&gt;void f(void)&lt;/code&gt;  表示 f 函数没有参数&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;void f()&lt;/code&gt;  表示 f 函数参数未知，不建议这样写原型，原型里一定要写全参数；&lt;/p&gt;
 &lt;h2 id=&#34;数组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数组&#34;&gt;#&lt;/a&gt; 数组&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;数组定义&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;类型&amp;gt; 变量名称 [元素数量];&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;数组集成初始化&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;int a[] = &amp;#123;2, 4, 6, ...&amp;#125;;&lt;/code&gt; ，大小由元素数量确定。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int a[13] = &amp;#123;2&amp;#125;;&lt;/code&gt; ，除了第一个元素为 2，其他元素均为 0&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int a[10] = &amp;#123; [0] = 2, [2] = 3, 6, &amp;#125;;&lt;/code&gt;  6 是  &lt;code&gt;a[3]&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;用  &lt;code&gt;[n]&lt;/code&gt;  在初始化数据中给出定位&lt;/li&gt;
+&lt;li&gt;没有定位的数据接在前面的位置后面&lt;/li&gt;
+&lt;li&gt;其他位置的值补零&lt;/li&gt;
+&lt;li&gt;也可以不给出数组大小，让编译器算&lt;/li&gt;
+&lt;li&gt;特别适合初始数据稀疏的数组&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;数组大小&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sizeof(a)/sizeof(a[0])&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;数组赋值&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;int a[] = &amp;#123;2,3,4&amp;#125;; int b[] = a;&lt;/code&gt;  是不能赋值的&lt;/li&gt;
+&lt;li&gt;必须遍历： &lt;code&gt;for (i=0; i&amp;lt;length; i++) &amp;#123;b[i] = a[i];&amp;#125;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int a[][3] = &amp;#123; &amp;#123;0&amp;#125;,&amp;#123;1&amp;#125;,&amp;#123;2&amp;#125; &amp;#125;;&lt;/code&gt; ， &lt;code&gt;a = [[0,0,0],[1,0,0],[2,0,0]]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;遍历数组&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通常使用 for，i 从 0 到 &amp;lt; 数组的长度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;数组作为函数参数时，往往&lt;strong&gt;必须再用另一个参数来传入数组大小&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不能在  &lt;code&gt;[]&lt;/code&gt;  中给出数组大小&lt;/li&gt;
+&lt;li&gt;不能再利用 sizeof 来计算数组的元素个数&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;输入输出&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#输入输出&#34;&gt;#&lt;/a&gt; 输入输出&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;printf(&amp;quot;%03d&amp;quot;,out_time)&lt;/strong&gt;;&lt;/p&gt;
 &lt;p&gt;%03d 是用在 printf 或 scanf 函数中的格式符，用来以特定的格式输入和输出字符。&lt;/p&gt;
@@ -2448,6 +2505,8 @@ a 存储单元中的数据可以是一个普通数值，也可以是另一个存
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubWFjYmwuY29tLw==&#34;&gt;马可菠萝 - 分享你喜欢的 MAC 应用&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZGlnaXQ3Ny5jb20v&#34;&gt;Digit77.com | 海量精品 Mac 应用免费分享&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuNTJwb2ppZS5jbi8=&#34;&gt;吾爱破解 &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZnJlZWRpZGkuY29tLw==&#34;&gt;零度解说 – FreeDiDi&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jYW5nc2h1aS5uZXQv&#34;&gt;沧水的博客 – 网页制作 | 运维开发 | 游戏娱乐 | 资源分享 | 生活随写&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly8za2xhLmNuLw==&#34;&gt;3 克拉&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3ljaXQueXMxNjguY29tLw==&#34;&gt;8791 的空间&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVubmluZ2NoZWVzZS5jb20v&#34;&gt;奔跑中的奶酪 - 有智，有趣，有爱&lt;/span&gt;&lt;/p&gt;
