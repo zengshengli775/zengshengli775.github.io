@@ -2355,8 +2355,16 @@ Var_z[C_1]+Var_z[C_2]=w^T(S_1+S_2)w
             <category term="实用技巧" scheme="https://zengshengli775.gitee.io/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" />
             <category term="PS4" scheme="https://zengshengli775.gitee.io/tags/PS4/" />
             <pubDate>Thu, 26 Aug 2021 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;ps4代理上网&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ps4代理上网&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbWFpbG5jdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzp0Oi9nL3BlcnNvbmFsLzYxMDgxMTkwOTRfZW1haWxfbmN1X2VkdV9jbi9FVUpzc0JPV1pwZElnUWxEVDQ0eFZYUUJjVzZxT1pHcFdpanBJYlFLeDh0NXZBP2U9NEx2MFY3&#34;&gt;PS4 代理上网&lt;/span&gt;&lt;/h2&gt;
-&lt;p&gt;gitee 净网，有敏感字，无法部署，请转至&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbWFpbG5jdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzp0Oi9nL3BlcnNvbmFsLzYxMDgxMTkwOTRfZW1haWxfbmN1X2VkdV9jbi9FVUpzc0JPV1pwZElnUWxEVDQ0eFZYUUJjVzZxT1pHcFdpanBJYlFLeDh0NXZBP2U9NEx2MFY3&#34;&gt; onedriver&lt;/span&gt; 下载浏览。&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;ps4代理上网&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ps4代理上网&#34;&gt;#&lt;/a&gt; PS4 代理上网&lt;/h2&gt;
+&lt;p&gt;gitee 净网，有敏感字，无法部署，请转至 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbWFpbG5jdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzp0Oi9nL3BlcnNvbmFsLzYxMDgxMTkwOTRfZW1haWxfbmN1X2VkdV9jbi9FYnl0Y1AxTXNNaEdrMnB3OHMzMWFRd0JONENvS2VOa0h4ZFowV2hGLUhMSVVnP2U9Y1ZaNUxK&#34;&gt;onedriver&lt;/span&gt; 下载浏览。&lt;/p&gt;
+&lt;p&gt;
+
+	&lt;div class=&#34;row&#34;&gt;
+		&lt;iframe src=&#34;https://drive.google.com/file/d/1UO7t5vQ5WQmWkHtGrn_XZXOT0O7PfLBY/view?usp=sharing/preview&#34; style=&#34;width:100%; height:550px&#34;&gt;&lt;/iframe&gt;
+	&lt;/div&gt;
+
+
+&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -2856,6 +2864,111 @@ a 存储单元中的数据可以是一个普通数值，也可以是另一个存
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;*p++&lt;/code&gt;  指针的每一次递增，它其实会指向下一个元素的存储单元。&lt;/li&gt;
 &lt;li&gt;指针在递增和递减时跳跃的字节数取决于指针所指向变量数据类型长度，比如 int 就是 4 个字节。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;字符串&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字符串&#34;&gt;#&lt;/a&gt; 字符串&lt;/h2&gt;
+&lt;h3 id=&#34;字符类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字符类型&#34;&gt;#&lt;/a&gt; &lt;strong&gt;字符类型&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;char 是一种&lt;strong&gt;整数&lt;/strong&gt;，也是一种特殊的类型：&lt;strong&gt;字符&lt;/strong&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;单引号表示字符变量&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;printf scanf&lt;/code&gt;  中用 % c 输入输出字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&#39;1&#39;&lt;/code&gt;  的 ASCII 编码是 49，所以当 c==49 时，它代表  &lt;code&gt;&#39;1&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如何输入  &lt;code&gt;&#39;1&#39;&lt;/code&gt;  这个字符给 char c&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;scanf(&amp;quot;%c&amp;quot;, &amp;amp;c); -&amp;gt;1&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;scanf(&amp;quot;%d&amp;quot;, &amp;amp;i); c=i; -&amp;gt;49&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;‘1’ 的 ASCII 编码是 49，所以当 c &lt;mark&gt;49 时，它代表 ‘1’，**49&lt;/mark&gt;’1’**&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个 49 各自表述&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;混合输入&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;没有空格，只读到&lt;strong&gt;整数结束&lt;/strong&gt;为止&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scanf(&amp;quot;%d %c&amp;quot;, &amp;amp;i, &amp;amp;c);&lt;/code&gt;  与  &lt;code&gt;scanf(&amp;quot;%d%c&amp;quot;, &amp;amp;i, &amp;amp;c);&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;字符计算&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&#39;A++&#39; == &#39;B&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;大小写转换： &lt;code&gt;a+&#39;a&#39;-&#39;A&#39;&lt;/code&gt;  可以把一个大写字母变成小写字母； &lt;code&gt;a+&#39;A&#39;-&#39;a&#39;&lt;/code&gt;  可以把小写字母变成大写字母&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;逃逸字符&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用来表达无法打印出来的控制字符或特殊字符，由一个反斜杠开头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\b, \t, \n, \r, \&amp;quot;, \&#39;, \\&lt;/code&gt; ，table 是在固定位置（制表位）， &lt;code&gt;\r&lt;/code&gt;  是回车，编译器会把  &lt;code&gt;\n&lt;/code&gt;  翻译成回车 + 换行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;字符串-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字符串-2&#34;&gt;#&lt;/a&gt; &lt;strong&gt;字符串&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;字符数组如  &lt;code&gt;char word[] = &amp;#123;&#39;H&#39;, &#39;e&#39;, &#39;l&#39;, &#39;l&#39;&amp;#125;&lt;/code&gt;  不是 C 语言的字符串，因为不能用字符串的方式做计算，这样的才是： &lt;code&gt;char word[] = &amp;#123;&#39;H&#39;, &#39;e&#39;, &#39;l&#39;, &#39;l&#39;, &#39;\0&#39;&amp;#125;&lt;/code&gt; ，word 还是字符数组，但是因为最后的 0，它就是 C 语言的字符串，可以使用字符串运算方法运算。&lt;/li&gt;
+&lt;li&gt;字符串是以 0（整数 0）结尾的一串字符（一定要有 0），&lt;strong&gt;0 或  &lt;code&gt;&#39;\0&#39;&lt;/code&gt; &lt;/strong&gt; 是一样的，但是和  &lt;code&gt;&#39;0&#39;&lt;/code&gt;  不同&lt;/li&gt;
+&lt;li&gt;0 标志字符串的阶数，但不是字符串的一部分，计算长度不包含这个 0&lt;/li&gt;
+&lt;li&gt;字符串以&lt;strong&gt;数组的形式&lt;/strong&gt;存在，以&lt;strong&gt;数组或指针的形式访问&lt;/strong&gt;，我们可以用指针访问一个数组，也可以用数组的形式去访问指针所代表的那一片连续的地址空间（但字符串在内存当中的表达形式一定是数组）。更多是以指针的形式。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;string.h&lt;/code&gt;  里有很多处理字符串的函数&lt;/li&gt;
+&lt;li&gt;字符串变量：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;char *str = &amp;quot;Hello&amp;quot;;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;char word[] = &amp;quot;Hello&amp;quot;;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;char line[10] = &amp;quot;Hello&amp;quot;;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;字符串常量：
+&lt;ul&gt;
+&lt;li&gt;“Hello”，会被编译器变成一个字符数组放到某处，这个数组的长度是 6，结尾还有表示结束的 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;总结：C 语言的字符串是以字符数组的形式存在的&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;不能用运算符对字符串做运算&lt;/li&gt;
+&lt;li&gt;通过数组的方式可以遍历字符串&lt;/li&gt;
+&lt;li&gt;唯一&lt;strong&gt;特殊&lt;/strong&gt;的地方是字符串字面量可以用来初始化字符数组以及&lt;strong&gt;标准库&lt;/strong&gt;提供了一系列字符串函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;char *s = &amp;quot;Hello, World!&amp;quot;;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;指针还是数组？
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作为数组&lt;/strong&gt;：这个字符串就在这里
+&lt;ul&gt;
+&lt;li&gt;作为本地变量空间自动被回收&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;作为指针&lt;/strong&gt;：它指向某个地方的字符串，但这个字符串不知道在哪里
+&lt;ul&gt;
+&lt;li&gt;就是作为一个字符串，只读不写&lt;/li&gt;
+&lt;li&gt;处理参数&lt;/li&gt;
+&lt;li&gt;动态分配空间（空间用 malloc 得到）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;如果要构造一个字符串，用数组；如果要处理一个字符串，用指针&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;字符串可以表达为  &lt;code&gt;char\*&lt;/code&gt;  的形式， &lt;code&gt;char\*&lt;/code&gt;  不一定是字符串&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;本意是指向字符的指针，可能指向的是字符的数组（就像  &lt;code&gt;int*&lt;/code&gt;  一样）&lt;/li&gt;
+&lt;li&gt;只有它所指的字符串数组有结尾的 0，才能说它所指的是字符串&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
