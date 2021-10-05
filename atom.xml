@@ -10282,9 +10282,6 @@ int main() &amp;#123;
 	return 0;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;** 练习案例：** 乘法口诀表&lt;/p&gt;
-&lt;p&gt;案例描述：利用嵌套循环，实现九九乘法表&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110011125220.jpg&#34; alt=&#34;0006018857256120_b&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;43-跳转语句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#43-跳转语句&#34;&gt;#&lt;/a&gt; 4.3 跳转语句&lt;/h3&gt;
 &lt;h4 id=&#34;431-break语句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#431-break语句&#34;&gt;#&lt;/a&gt; 4.3.1 break 语句&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;作用:&lt;/strong&gt; 用于跳出&lt;mark&gt;选择结构&lt;/mark&gt;或者&lt;mark&gt;循环结构&lt;/mark&gt;&lt;/p&gt;
@@ -10416,7 +10413,6 @@ int main() &amp;#123;
 &lt;p&gt;所谓数组，就是一个集合，里面存放了相同类型的数据元素&lt;/p&gt;
 &lt;p&gt;** 特点 1：** 数组中的每个&lt;mark&gt;数据元素都是相同的数据类型&lt;/mark&gt;&lt;/p&gt;
 &lt;p&gt;** 特点 2：** 数组是由&lt;mark&gt;连续的内存&lt;/mark&gt;位置组成的&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110011125738.png&#34; alt=&#34;1541748375356&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;52-一维数组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#52-一维数组&#34;&gt;#&lt;/a&gt; 5.2 一维数组&lt;/h3&gt;
 &lt;h4 id=&#34;521-一维数组定义方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#521-一维数组定义方式&#34;&gt;#&lt;/a&gt; 5.2.1 一维数组定义方式&lt;/h4&gt;
 &lt;p&gt;一维数组定义的三种方式：&lt;/p&gt;
@@ -10426,53 +10422,7 @@ int main() &amp;#123;
 &lt;li&gt;&lt;code&gt;数据类型  数组名[ ] = &amp;#123; 值1，值2 ...&amp;#125;;&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;示例&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C++&#34;&gt;int main() &amp;#123;
-
-	//定义方式1
-	//数据类型 数组名[元素个数];
-	int score[10];
-
-	//利用下标赋值
-	score[0] = 100;
-	score[1] = 99;
-	score[2] = 85;
-
-	//利用下标输出
-	cout &amp;lt;&amp;lt; score[0] &amp;lt;&amp;lt; endl;
-	cout &amp;lt;&amp;lt; score[1] &amp;lt;&amp;lt; endl;
-	cout &amp;lt;&amp;lt; score[2] &amp;lt;&amp;lt; endl;
-
-
-	//第二种定义方式
-	//数据类型 数组名[元素个数] =  &amp;#123;值1，值2 ，值3 ...&amp;#125;;
-	//如果&amp;#123;&amp;#125;内不足10个数据，剩余数据用0补全
-	int score2[10] = &amp;#123; 100, 90,80,70,60,50,40,30,20,10 &amp;#125;;
-	
-	//逐个输出
-	//cout &amp;lt;&amp;lt; score2[0] &amp;lt;&amp;lt; endl;
-	//cout &amp;lt;&amp;lt; score2[1] &amp;lt;&amp;lt; endl;
-
-	//一个一个输出太麻烦，因此可以利用循环进行输出
-	for (int i = 0; i &amp;lt; 10; i++)
-	&amp;#123;
-		cout &amp;lt;&amp;lt; score2[i] &amp;lt;&amp;lt; endl;
-	&amp;#125;
-
-	//定义方式3
-	//数据类型 数组名[] =  &amp;#123;值1，值2 ，值3 ...&amp;#125;;
-	int score3[] = &amp;#123; 100,90,80,70,60,50,40,30,20,10 &amp;#125;;
-
-	for (int i = 0; i &amp;lt; 10; i++)
-	&amp;#123;
-		cout &amp;lt;&amp;lt; score3[i] &amp;lt;&amp;lt; endl;
-	&amp;#125;
-
-	system(&amp;quot;pause&amp;quot;);
-
-	return 0;
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 定义方式 1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 数据类型 数组名 [元素个数];&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; score&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 利用下标赋值&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	score&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	score&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;99&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	score&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;85&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 利用下标输出&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; score&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; score&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; score&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 第二种定义方式&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 数据类型 数组名 [元素个数] =  &amp;#123;值 1，值 2 ，值 3 ...&amp;#125;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 如果 &amp;#123;&amp;#125; 内不足 10 个数据，剩余数据用 0 补全&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; score2&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;90&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;70&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;60&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 逐个输出&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;//cout &amp;lt;&amp;lt; score2[0] &amp;lt;&amp;lt; endl;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;//cout &amp;lt;&amp;lt; score2[1] &amp;lt;&amp;lt; endl;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 一个一个输出太麻烦，因此可以利用循环进行输出&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; score2&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 定义方式 3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token comment&#34;&gt;// 数据类型 数组名 [] =  &amp;#123;值 1，值 2 ，值 3 ...&amp;#125;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;35&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; score3&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;90&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;70&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;60&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;36&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;37&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; i&lt;span class=&#34;token operator&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;38&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;39&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; score3&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; endl&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;40&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;41&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;42&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token function&#34;&gt;system&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;pause&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;43&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;44&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;45&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
 &lt;p&gt;总结 1：数组名的命名规范与变量名命名规范一致，不要和变量重名&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
@@ -10517,13 +10467,6 @@ int main() &amp;#123;
 &lt;blockquote&gt;
 &lt;p&gt;总结 2：对数组名进行 sizeof，可以获取整个数组占内存空间的大小&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;练习案例 1&lt;/strong&gt;：五只小猪称体重&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;案例描述：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在一个数组中记录了五只小猪的体重，如：int arr [5] = {300,350,200,400,250};&lt;/p&gt;
-&lt;p&gt;找出并打印最重的小猪体重。&lt;/p&gt;
-&lt;p&gt;** 练习案例 2：** 数组元素逆置&lt;/p&gt;
-&lt;p&gt;** 案例描述：** 请声明一个 5 个元素的数组，并且将元素逆置.&lt;/p&gt;
-&lt;p&gt;(如原数组元素为：1,3,2,5,4; 逆置后输出结果为：4,5,2,3,1);&lt;/p&gt;
 &lt;h4 id=&#34;523-冒泡排序&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#523-冒泡排序&#34;&gt;#&lt;/a&gt; 5.2.3 冒泡排序&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;作用：&lt;/strong&gt; 最常用的排序算法，对数组内元素进行排序&lt;/p&gt;
 &lt;ol&gt;
@@ -10562,7 +10505,6 @@ int main() &amp;#123;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;53-二维数组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#53-二维数组&#34;&gt;#&lt;/a&gt; 5.3 二维数组&lt;/h3&gt;
 &lt;p&gt;二维数组就是在一维数组上，多加一个维度。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110011125682.png&#34; alt=&#34;1541905559138&#34; /&gt;&lt;/p&gt;
 &lt;h4 id=&#34;531-二维数组定义方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#531-二维数组定义方式&#34;&gt;#&lt;/a&gt; 5.3.1 二维数组定义方式&lt;/h4&gt;
 &lt;p&gt;二维数组定义的四种方式：&lt;/p&gt;
 &lt;ol&gt;
@@ -12253,6 +12195,177 @@ int main() &amp;#123;
 &lt;h4 id=&#34;代码-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码-3&#34;&gt;#&lt;/a&gt; 代码&lt;/h4&gt;
 &lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 随机森林去进行预测&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;rf &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; RandomForestClassifier&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;param &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;n_estimators&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;120&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;300&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;500&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;800&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;max_depth&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 超参数调优&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;gc &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; GridSearchCV&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;rf&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; param_grid&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;param&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; cv&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;gc&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x_train&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y_train&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;随机森林预测的准确率为：&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; gc&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;score&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x_test&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y_test&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110011700215.png&#34; alt=&#34;机器学习day02&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;回归与聚类算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#回归与聚类算法&#34;&gt;#&lt;/a&gt; 回归与聚类算法&lt;/h2&gt;
+&lt;h3 id=&#34;线性回归&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性回归&#34;&gt;#&lt;/a&gt; 线性回归&lt;/h3&gt;
+&lt;h4 id=&#34;定义与公式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义与公式&#34;&gt;#&lt;/a&gt; 定义与公式&lt;/h4&gt;
+&lt;p&gt;线性回归 (Linear regression) 是利用&lt;strong&gt;回归方程 (函数)&lt;strong&gt; 对一个或&lt;/strong&gt;多个自变量 (特征值) 和因变量 (目标值) 之间&lt;/strong&gt;关系进行建模的一种分析方式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;特点：只有一个自变量的情况称为单变量回归，大于一个自变量情况的叫做多元回归&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110052058772.png&#34; alt=&#34;线性回归公式&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;损失函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#损失函数&#34;&gt;#&lt;/a&gt; 损失函数&lt;/h3&gt;
+&lt;p&gt;总损失定义为：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110052102076.png&#34; alt=&#34;线性回归损失函数&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;y_i 为第 i 个训练样本的真实值&lt;/li&gt;
+&lt;li&gt;h (x_i) 为第 i 个训练样本特征值组合预测函数&lt;/li&gt;
+&lt;li&gt;又称最小二乘法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;优化算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#优化算法&#34;&gt;#&lt;/a&gt; 优化算法&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;如何去求模型当中的 W，使得损失最小？（目的是找到最小损失对应的 W 值）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;线性回归经常使用的两种优化算法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;正规方程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110052103328.png&#34; alt=&#34;正规方程&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;理解：X 为特征值矩阵，y 为目标值矩阵。直接求到最好的结果&lt;/p&gt;
+&lt;p&gt;缺点：当特征过多过复杂时，求解速度太慢并且得不到结果&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110052107712.png&#34; alt=&#34;损失行数求解1&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;梯度下降 (Gradient Descent)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110052108246.png&#34; alt=&#34;梯度下降公式&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;理解：α 为学习速率，需要手动指定（超参数），α 旁边的整体表示方向&lt;/p&gt;
+&lt;p&gt;沿着这个函数下降的方向找，最后就能找到山谷的最低点，然后更新 W 值&lt;/p&gt;
+&lt;p&gt;使用：面对训练数据规模十分庞大的任务 ，能够找到较好的结果&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我们通过两个图更好理解梯度下降的过程&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110052109456.png&#34; alt=&#34;单变量的梯度下降&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110052109622.png&#34; alt=&#34;多变量的梯度下降&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;所以有了梯度下降这样一个优化算法，回归就有了 &amp;quot;自动学习&amp;quot; 的能力&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;优化动态图演示&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#优化动态图演示&#34;&gt;#&lt;/a&gt; 优化动态图演示&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110052109870.gif&#34; alt=&#34;线性回归优化动态图&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;线性回归api&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性回归api&#34;&gt;#&lt;/a&gt; 线性回归 API&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;sklearn.linear_model.LinearRegression(fit_intercept=True)
+&lt;ul&gt;
+&lt;li&gt;通过正规方程优化&lt;/li&gt;
+&lt;li&gt;fit_intercept：是否计算偏置&lt;/li&gt;
+&lt;li&gt;LinearRegression.coef_：回归系数&lt;/li&gt;
+&lt;li&gt;LinearRegression.intercept_：偏置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;sklearn.linear_model.SGDRegressor(loss=&amp;quot;squared_loss&amp;quot;, fit_intercept=True, learning_rate =&#39;invscaling&#39;, eta0=0.01)
+&lt;ul&gt;
+&lt;li&gt;SGDRegressor 类实现了随机梯度下降学习，它支持不同的&lt;strong&gt; loss 函数和正则化惩罚项&lt;/strong&gt;来拟合线性回归模型。&lt;/li&gt;
+&lt;li&gt;loss: 损失类型
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;loss=”squared_loss”: 普通最小二乘法&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;fit_intercept：是否计算偏置&lt;/li&gt;
+&lt;li&gt;learning_rate : string, optional
+&lt;ul&gt;
+&lt;li&gt;学习率填充&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&#39;constant&#39;: eta = eta0&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&#39;optimal&#39;: eta = 1.0 / (alpha * (t + t0)) [default]&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&#39;invscaling&#39;: eta = eta0 / pow(t, power_t)
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;power_t=0.25: 存在父类当中&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;对于一个常数值的学习率来说，可以使用 learning_rate=’constant’ ，并使用 eta0 来指定学习率。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SGDRegressor.coef_：回归系数&lt;/li&gt;
+&lt;li&gt;SGDRegressor.intercept_：偏置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;sklearn 提供给我们两种实现的 API， 可以根据选择使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;分析-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#分析-3&#34;&gt;#&lt;/a&gt; 分析&lt;/h3&gt;
+&lt;p&gt;回归当中的数据大小不一致，是否会导致结果影响较大。所以需要做标准化处理。同时我们对目标值也需要做标准化处理。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数据分割与标准化处理&lt;/li&gt;
+&lt;li&gt;回归预测&lt;/li&gt;
+&lt;li&gt;线性回归的算法效果评估&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;回归性能评估&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#回归性能评估&#34;&gt;#&lt;/a&gt; 回归性能评估&lt;/h3&gt;
+&lt;p&gt;均方误差 (Mean Squared Error) MSE) 评价机制：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110052122771.png&#34; alt=&#34;线性回归评估&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注：y^i 为预测值，¯y 为真实值&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;sklearn.metrics.mean_squared_error(y_true, y_pred)
+&lt;ul&gt;
+&lt;li&gt;均方误差回归损失&lt;/li&gt;
+&lt;li&gt;y_true: 真实值&lt;/li&gt;
+&lt;li&gt;y_pred: 预测值&lt;/li&gt;
+&lt;li&gt;return: 浮点数结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;代码-4&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码-4&#34;&gt;#&lt;/a&gt; 代码&lt;/h3&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;mylinearregression&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    线性回归预测房子价格&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    :return:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &#34;&#34;&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    lb &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; load_boston&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;#&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# print(lb.data)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;#&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# print(lb.target)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# 对数据集进行划分&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    x_train&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; x_test&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y_train&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y_test &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; train_test_split&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;lb&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; lb&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;target&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; test_size&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; random_state&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# 需要做标准化处理对于特征值处理&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    std_x &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; StandardScaler&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    x_train &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; std_x&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fit_transform&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x_train&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    x_test &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; std_x&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fit_transform&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x_test&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# print(x_train)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# 对于目标值进行标准化&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    std_y &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; StandardScaler&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    y_train &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; std_y&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fit_transform&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;y_train&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    y_test &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; std_y&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;transform&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;y_test&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    y_test &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; std_y&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;inverse_transform&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;y_test&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# 使用线性模型进行预测&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# 使用正规方程求解&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    lr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; LinearRegression&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# # 此时在干什么？&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    lr&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x_train&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y_train&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;35&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    y_lr_predict &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; std_y&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;inverse_transform&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;lr&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;predict&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x_test&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;36&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;37&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;lr&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;coef_&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;38&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;39&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;正规方程预测的结果为：&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y_lr_predict&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;40&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;41&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;正规方程的均方误差为：&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; mean_squared_error&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;y_test&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y_lr_predict&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;42&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;43&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# 梯度下降进行预测&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;44&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    sgd &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; SGDRegressor&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;45&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;#&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;46&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    sgd&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x_train&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y_train&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;47&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;SGD的权重参数为：&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; sgd&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;coef_&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;48&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;#&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;49&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    y_sgd_predict &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; std_y&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;inverse_transform&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sgd&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;predict&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x_test&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;50&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;#&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;51&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;SGD的预测的结果为：&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y_sgd_predict&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;52&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;#&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;53&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token comment&#34;&gt;# # 怎么评判这两个方法好坏&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;54&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;SGD的均方误差为：&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; mean_squared_error&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;y_test&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y_sgd_predict&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;55&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;56&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;正规方程和梯度下降对比&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#正规方程和梯度下降对比&#34;&gt;#&lt;/a&gt; 正规方程和梯度下降对比&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/1910853272/image/img/202110052125273.png&#34; alt=&#34;正规方程和梯度下降对比&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;文字对比&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;梯度下降&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;正规方程&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;需要选择学习率&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;不需要&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;需要迭代求解&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;一次运算得出&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;特征数量较大可以使用&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;需要计算方程，时间复杂度高 O (n3)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;选择：
+&lt;ul&gt;
+&lt;li&gt;小规模数据：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;LinearRegression (不能解决拟合问题)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;岭回归&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;大规模数据：SGDRegressor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;拓展-关于优化方法gd-sgd-sag&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#拓展-关于优化方法gd-sgd-sag&#34;&gt;#&lt;/a&gt; 拓展 - 关于优化方法 GD、SGD、SAG&lt;/h3&gt;
+&lt;h4 id=&#34;gd&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gd&#34;&gt;#&lt;/a&gt; GD&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;梯度下降 (Gradient Descent)，原始的梯度下降法需要计算所有样本的值才能够得出梯度，计算量大，所以后面才有会一系列的改进。&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;sgd&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sgd&#34;&gt;#&lt;/a&gt; SGD&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;随机梯度下降 (Stochastic gradient descent) 是一个优化方法。它在一次迭代时只考虑一个训练样本。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SGD 的优点是：
+&lt;ul&gt;
+&lt;li&gt;高效&lt;/li&gt;
+&lt;li&gt;容易实现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SGD 的缺点是：
+&lt;ul&gt;
+&lt;li&gt;SGD 需要许多超参数：比如正则项参数、迭代数。&lt;/li&gt;
+&lt;li&gt;SGD 对于特征标准化是敏感的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;sag&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sag&#34;&gt;#&lt;/a&gt; SAG&lt;/h4&gt;
+&lt;p&gt;随机平均梯度法 (Stochasitc Average Gradient)，由于收敛的速度太慢，有人提出 SAG 等基于梯度下降的算法&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Scikit-learn：SGDRegressor、岭回归、逻辑回归等当中都会有 SAG 优化&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;欠拟合与过拟合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#欠拟合与过拟合&#34;&gt;#&lt;/a&gt; 欠拟合与过拟合&lt;/h2&gt;
 </content>
         <category term="机器学习" scheme="https://zengshengli775.gitee.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
         <category term="机器学习" scheme="https://zengshengli775.gitee.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
