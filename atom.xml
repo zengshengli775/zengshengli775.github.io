@@ -8,11 +8,405 @@
     <author>
       <name>lzs</name>
     </author>
-    <updated>2022-02-18T05:37:19.000Z</updated>
+    <updated>2022-02-28T16:00:00.000Z</updated>
     <category term="博客" />
     <category term="主题" />
     <category term="编程" />
     <category term="笔记" />
+    <entry>
+        <id>https://zengshengli775.gitee.io/2022/03/01/%E8%80%83%E7%A0%94/%E7%8E%8B%E9%81%93C%E8%AF%AD%E8%A8%80/</id>
+        <title>考研流程记录</title>
+        <link rel="alternate" href="https://zengshengli775.gitee.io/2022/03/01/%E8%80%83%E7%A0%94/%E7%8E%8B%E9%81%93C%E8%AF%AD%E8%A8%80/"/>
+        <content type="html">&lt;h2 id=&#34;1顺序表的增删改查&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1顺序表的增删改查&#34;&gt;#&lt;/a&gt; 1. 顺序表的增删改查&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include&amp;lt;stdio.h&amp;gt;
+#include&amp;lt;stdlib.h&amp;gt;
+#define MaxSize 50
+typedef  int ElemType;
+typedef struct &amp;#123;
+	ElemType data[MaxSize];
+	int len;
+&amp;#125;Sqlist;
+int LocateElem(Sqlist L, ElemType e)
+&amp;#123;
+	int i;
+	for (i = 0; i &amp;lt; L.len; i++)
+		if (L.data[i] == e)
+			return i + 1;
+	return 0;
+	/*int j = 0;
+	while (L.data[j++] == e)
+		return j;*/
+&amp;#125;
+bool ListDelete(Sqlist&amp;amp; L, int i, ElemType&amp;amp; e)
+&amp;#123;
+	if (i&amp;lt;1 || i&amp;gt;L.len)
+		return false;
+	if (L.len == 0)
+		return 0;
+	e = L.data[i];
+	for (int j = i; j &amp;lt; L.len; j++)
+		L.data[j] = L.data[j + 1];
+	L.len--;
+	return true;
+&amp;#125;
+void PrintList(Sqlist&amp;amp; L)
+&amp;#123;
+	for (int i = 0; i &amp;lt; L.len; i++)
+		printf(&amp;quot;%4d&amp;quot;, L.data[i]);
+	printf(&amp;quot;\n&amp;quot;);
+&amp;#125;
+bool ListInsert(Sqlist&amp;amp; L, int i, ElemType e)
+&amp;#123;
+	if (i&amp;lt;0 || i&amp;gt;L.len + 1)//判断要插入的位置是否合法
+		return false;
+	if (L.len &amp;gt;= MaxSize)//元素存储满了，不能再存了
+		return false;
+	for (int j = L.len; j &amp;gt;= i; j--)//移动顺序表中的元素，依次往后移动
+		L.data[j] = L.data[j - 1];
+	L.data[i - 1] = e;//数组下标从零开始，插入第一个位置，访问的下标是0
+	L.len++;
+	return true;
+&amp;#125;
+int main()
+&amp;#123;
+	Sqlist L;
+	bool ret;
+	ElemType del;
+	L.data[0] = 1;
+	L.data[1] = 2;
+	L.data[2] = 3;
+	L.len = 3;
+	ret = ListInsert(L, 2, 60);
+	if (ret)
+	&amp;#123;
+		printf(&amp;quot;插入成功\n&amp;quot;);
+		PrintList(L);
+	&amp;#125;
+	else
+	&amp;#123;
+		printf(&amp;quot;插入失败\n&amp;quot;);
+	&amp;#125;
+ 
+	ret = ListDelete(L, 1, del);
+	if (ret)
+	&amp;#123;
+		printf(&amp;quot;删除成功\n&amp;quot;);
+		printf(&amp;quot;删除元素值为%d\n&amp;quot;, del);
+		PrintList(L);
+	&amp;#125;
+	else
+	&amp;#123;
+		printf(&amp;quot;删除失败\n&amp;quot;);
+	&amp;#125;
+ 
+	/*ret = LocateElem(L, 60);
+	if (ret)
+	&amp;#123;
+		printf(&amp;quot;查找成功\n&amp;quot;);
+		printf(&amp;quot;元素位置为%d\n&amp;quot;, ret);
+	&amp;#125;
+	else
+	&amp;#123;
+		printf(&amp;quot;查找失败\n&amp;quot;);
+	&amp;#125;*/
+	int elem_pos;
+	elem_pos = LocateElem(L, 60);
+	if(elem_pos)
+	&amp;#123;
+		printf(&amp;quot;查找成功\n&amp;quot;);
+		printf(&amp;quot;元素位置为%d\n&amp;quot;, ret);
+	&amp;#125;
+	else
+	&amp;#123;
+		printf(&amp;quot;查找失败\n&amp;quot;);
+	&amp;#125;
+	return 0;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;2-线性表的链式表示&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-线性表的链式表示&#34;&gt;#&lt;/a&gt; 2 线性表的链式表示&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#define _CRT_SECURE_NO_WARNINGS
+#include&amp;lt;stdio.h&amp;gt;
+#include&amp;lt;stdlib.h&amp;gt;
+typedef int ElemType;
+typedef struct LNode &amp;#123;
+	ElemType data;
+	struct LNode* next;//指向下一个结点
+&amp;#125;LNode,*LinkList;
+//头插新建链表
+LinkList CreateList1(LinkList&amp;amp; L)
+&amp;#123;
+	LNode *s; int x;
+	L = (LinkList)malloc(sizeof(LNode));//带头结点的链表
+	L-&amp;gt;next = NULL;//L-&amp;gt;data里边没有放东西
+	scanf(&amp;quot;%d&amp;quot;, &amp;amp;x);//从标准输入读取数据
+	while (x != 9999) &amp;#123;
+		s = (LNode*)malloc(sizeof(LNode));//申请一个新空间给s，强制类型转换
+		s-&amp;gt;data = x;//把读取到的值，给新空间中的data成员
+		s-&amp;gt;next = L-&amp;gt;next;//让新节点的next指针指向链表的第一个元素
+		L-&amp;gt;next = s;//让s作为第一个元素
+		scanf(&amp;quot;%d&amp;quot;, &amp;amp;x);
+	&amp;#125;
+	return L;
+&amp;#125;
+LinkList CreateList2(LinkList&amp;amp; L)
+&amp;#123;
+	int x;
+	L = (LinkList)malloc(sizeof(LNode));
+	LNode* s, * r = L;
+	scanf(&amp;quot;%d&amp;quot;, &amp;amp;x);
+	while (x!= 9999)
+	&amp;#123;
+		s=(LNode*)malloc(sizeof(LNode));
+		s-&amp;gt;data = x;
+		r-&amp;gt;next = s;//让尾部结点指向新节点
+		r = s;//r指向新的表尾结点
+		scanf(&amp;quot;%d&amp;quot;, &amp;amp;x);
+	&amp;#125;
+	r-&amp;gt;next = NULL;
+	return L;
+&amp;#125;
+void PrintList(LinkList L)//没有填引用
+&amp;#123;
+	L = L-&amp;gt;next;//主函数L不变
+	while (L != NULL)
+	&amp;#123;
+		printf(&amp;quot;%3d&amp;quot;, L-&amp;gt;data);//打印当前结点数据
+		L = L-&amp;gt;next;//指向下一个结点
+	&amp;#125;
+	printf(&amp;quot;\n&amp;quot;);
+&amp;#125;
+//查找第几个结点的值
+LinkList GetElem(LinkList&amp;amp; L, int i)
+&amp;#123;
+	int j = 1;
+	LinkList p = L-&amp;gt;next;//前提头结点为空   让p指向第一个结点
+	if (0 == i)
+	&amp;#123;
+		return L;
+	&amp;#125;
+	if (i &amp;lt; 1)
+	&amp;#123;
+		return NULL;
+	&amp;#125;
+	while (p &amp;amp;&amp;amp; j &amp;lt; i)
+	&amp;#123;
+		p = p-&amp;gt;next;//指向下一个结点
+		j++;
+	&amp;#125;
+	return p;
+&amp;#125;
+//按值查找
+LinkList LocateElem(LinkList L, ElemType e)
+&amp;#123;
+	LinkList p = L-&amp;gt;next;
+	while (p != NULL &amp;amp;&amp;amp; p-&amp;gt;data != e)
+	&amp;#123;
+		p = p-&amp;gt;next;
+	&amp;#125;
+	return p;
+&amp;#125;
+//往第i个位置插入元素
+bool ListFrontInsert(LinkList L, int i,ElemType e)
+&amp;#123;
+	LinkList p = GetElem(L, i - 1);
+	if (p == NULL)
+	&amp;#123;
+		return false;
+	&amp;#125;
+	LinkList s = (LinkList)malloc(sizeof(LNode));
+	s-&amp;gt;data = e;
+	s-&amp;gt;next = p-&amp;gt;next;
+	p-&amp;gt;next = s;//s是s这个结点的首地址
+	return true;
+&amp;#125;
+//删除第i个结点
+bool ListDelete(LinkList L, int i)
+&amp;#123;
+	LinkList p = GetElem(L, i - 1);
+	if(NULL == p)
+	&amp;#123;
+		return false;
+	&amp;#125;
+	LinkList q = p-&amp;gt;next;
+	if (NULL == q)
+	&amp;#123;
+		return false;
+	&amp;#125;
+	p-&amp;gt;next = q-&amp;gt;next;//断链
+	free(q);//释放对应结点空间
+	q = NULL;//为避免野指针
+	return true;
+&amp;#125;
+int main()
+&amp;#123;
+	LinkList L;//LinkList等价于struct LNode* 链表头，是结构体指针类型
+	LinkList search;
+	//CreateList1(L);//头插法新建链表
+	CreateList2(L);//尾插法新建链表   
+	PrintList(L);
+	search=GetElem(L, 2);
+	if (search != NULL)
+	&amp;#123;
+		printf(&amp;quot;查序列找成功\n&amp;quot;);
+		printf(&amp;quot;%d\n&amp;quot;, search-&amp;gt;data);
+	&amp;#125;
+	search = LocateElem(L, 6);
+	if (search != NULL)
+	&amp;#123;
+		printf(&amp;quot;查找值成功\n&amp;quot;);
+		printf(&amp;quot;%d\n&amp;quot;, search-&amp;gt;data);
+	&amp;#125;
+	ListFrontInsert(L, 2, 99);
+	PrintList(L);
+	ListDelete(L, 4);
+	PrintList(L);
+	return 0;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;3双向链表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3双向链表&#34;&gt;#&lt;/a&gt; 3. 双向链表&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#define _CRT_SECURE_NO_WARNINGS
+#include&amp;lt;stdio.h&amp;gt;
+#include&amp;lt;stdlib.h&amp;gt;
+typedef int ElemType;
+typedef struct DNode &amp;#123;
+	ElemType data;
+	struct DNode *prior,* next;//前驱 后继
+&amp;#125;DNode, * DLinkList;
+//双向链表头插法
+DLinkList Dlist_head_insert(DLinkList&amp;amp; DL)
+&amp;#123;
+	DNode* s; int x;
+	DL = (DLinkList)malloc(sizeof(DNode));//带头结点的链表，DL就是头结点
+	DL-&amp;gt;next = NULL;
+	DL-&amp;gt;prior = NULL;
+	scanf(&amp;quot;%d&amp;quot;, &amp;amp;x);
+	while (x != 9999)
+	&amp;#123;
+		s = (DLinkList)malloc(sizeof(DNode));//申请一个空间，强制类型转换
+		s-&amp;gt;data = x;
+		s-&amp;gt;next = DL-&amp;gt;next;
+		if (DL-&amp;gt;next != NULL)//插入第一个结点时，不需要这一步操作
+		&amp;#123;
+			DL-&amp;gt;next-&amp;gt;prior = s;
+		&amp;#125;
+		s-&amp;gt;prior = DL;
+		DL-&amp;gt;next=s;
+		scanf(&amp;quot;%d&amp;quot;, &amp;amp;x);
+	&amp;#125;
+	return DL;
+&amp;#125;
+//双向链表尾插法
+DLinkList DList_tail_insert(DLinkList&amp;amp; DL)
+&amp;#123;
+	int x;
+	DL = (DLinkList)malloc(sizeof(DNode));//带头结点的链表
+	DNode *s, * r = DL;//r代表尾指针
+	DL-&amp;gt;prior = NULL;
+	//3 4 5 6 7 9999
+	scanf(&amp;quot;%d&amp;quot;, &amp;amp;x);
+	while (x != 9999)
+	&amp;#123;
+		s = (DNode*)malloc(sizeof(DNode));
+		s-&amp;gt;data = x;
+		r-&amp;gt;next = s;
+		s-&amp;gt;prior = r;
+		r = s;//r指向新的表尾结点
+		scanf(&amp;quot;%d&amp;quot;, &amp;amp;x);
+	&amp;#125;
+		r-&amp;gt;next = NULL;
+		return DL;
+&amp;#125;
+DNode* GetElem(DLinkList DL, int i)
+&amp;#123;
+	int j = 1;
+	DNode* p = DL-&amp;gt;next;
+	if (i == 0)
+		return DL;
+	if (i &amp;lt; 1)
+		return NULL;
+	while (p &amp;amp;&amp;amp; j &amp;lt; i)
+	&amp;#123;
+		p = p-&amp;gt;next;
+		j++;
+	&amp;#125;
+	return p;
+&amp;#125;
+//新节点插入第i个位置
+bool DListFrontInsert(DLinkList DL, int i, ElemType e)
+&amp;#123;
+	DLinkList p = GetElem(DL, i - 1);//找前一个位置的地址;
+	if (NULL == p)
+	&amp;#123;
+		return false;
+	&amp;#125;
+	DLinkList s = (DLinkList)malloc(sizeof(DNode));//为新插入的结点申请空间
+	s-&amp;gt;data = e;
+	s-&amp;gt;next = p-&amp;gt;next;
+	p-&amp;gt;next-&amp;gt;prior = s;
+	s-&amp;gt;prior = p;
+	p-&amp;gt;next = s;
+	return true;
+&amp;#125;
+ 
+//删除第i个结点
+bool DListDelete(DLinkList DL, int i)
+&amp;#123;
+	DLinkList p = GetElem(DL, i - 1);
+	if (NULL == p)
+	&amp;#123;
+		return false;
+	&amp;#125;
+	DLinkList q;
+	q = p-&amp;gt;next;
+	if (q = NULL)//删除的元素不存在
+	&amp;#123;
+		return false;
+	&amp;#125;
+	p-&amp;gt;next = q-&amp;gt;next;//断链
+	if (q-&amp;gt;next != NULL)//q-&amp;gt;next为NULL删除的是最后一个结点
+	&amp;#123;
+		q-&amp;gt;next-&amp;gt;prior = p;
+	&amp;#125;
+	free(q);
+	return true;
+&amp;#125;
+//链表打印
+void PrintDList(DLinkList DL)
+&amp;#123;
+	DL = DL-&amp;gt;next;
+	while (DL != NULL)
+	&amp;#123;
+		printf(&amp;quot;%3d&amp;quot;, DL-&amp;gt;data);
+		DL = DL-&amp;gt;next;
+	&amp;#125;
+	printf(&amp;quot;\n&amp;quot;);
+&amp;#125;
+int main()
+&amp;#123;
+	DLinkList DL; 
+	DLinkList search;
+	//Dlist_head_insert(DL);//头插法
+	DList_tail_insert(DL);//尾插法
+	PrintDList(DL);
+	search = GetElem(DL, 2);
+	if (search != NULL)
+	&amp;#123;
+		printf(&amp;quot;按序号查找成功\n&amp;quot;);
+		printf(&amp;quot;%d\n&amp;quot;, search-&amp;gt;data);
+	&amp;#125;
+	DListFrontInsert(DL, 3, 99);
+	PrintDList(DL);
+	DListDelete(DL, 2);
+	PrintDList(DL);
+	return 0;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        <category term="考研" scheme="https://zengshengli775.gitee.io/categories/%E8%80%83%E7%A0%94/" />
+        <category term="C语言" scheme="https://zengshengli775.gitee.io/tags/C%E8%AF%AD%E8%A8%80/" />
+        <category term="数据结构" scheme="https://zengshengli775.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" />
+        <updated>2022-02-28T16:00:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://zengshengli775.gitee.io/2022/02/18/%E6%9C%9F%E6%9C%AB/%E7%AE%97%E6%B3%95%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/</id>
         <title>算法复习资料</title>
@@ -13041,6 +13435,7 @@ int main() &amp;#123;
 &lt;p&gt;《汤家凤高等数学辅导讲义》+ 汤家凤基础班视频&lt;/p&gt;
 &lt;h6 id=&#34;2习题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2习题&#34;&gt;#&lt;/a&gt; 2. 习题&lt;/h6&gt;
 &lt;p&gt;《李永乐王式安复习全书》高数部分例题&lt;/p&gt;
+&lt;p&gt;《1800 题》&lt;/p&gt;
 &lt;h5 id=&#34;b高数强化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#b高数强化&#34;&gt;#&lt;/a&gt; B. 高数强化&lt;/h5&gt;
 &lt;h6 id=&#34;1教材辅导-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1教材辅导-2&#34;&gt;#&lt;/a&gt; 1. 教材辅导&lt;/h6&gt;
 &lt;p&gt;《张宇高数 18 讲》+ 张宇强化班视频&lt;/p&gt;
@@ -13049,29 +13444,18 @@ int main() &amp;#123;
 &lt;h4 id=&#34;线代&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线代&#34;&gt;#&lt;/a&gt; 线代&lt;/h4&gt;
 &lt;h5 id=&#34;a线代基础&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#a线代基础&#34;&gt;#&lt;/a&gt; A. 线代基础&lt;/h5&gt;
 &lt;h6 id=&#34;1教材辅导-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1教材辅导-3&#34;&gt;#&lt;/a&gt; 1. 教材辅导&lt;/h6&gt;
-&lt;p&gt;《李永乐王式安复习全书》线代部分 + 李永乐基础班视频&lt;/p&gt;
+&lt;p&gt;《李永乐王式安复习全书》+ 李永乐基础班视频&lt;/p&gt;
 &lt;h6 id=&#34;2习题-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2习题-3&#34;&gt;#&lt;/a&gt; 2. 习题&lt;/h6&gt;
 &lt;p&gt;《李永乐王式安复习全书》线代部分例题&lt;/p&gt;
+&lt;p&gt;《1800 题》&lt;/p&gt;
 &lt;h5 id=&#34;b线代强化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#b线代强化&#34;&gt;#&lt;/a&gt; B. 线代强化&lt;/h5&gt;
 &lt;h6 id=&#34;1教材辅导-4&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1教材辅导-4&#34;&gt;#&lt;/a&gt; 1. 教材辅导&lt;/h6&gt;
-&lt;p&gt;《张宇线代 9 讲》&lt;/p&gt;
 &lt;p&gt;《李永乐线代辅导讲义》+ 李永乐强化班视频&lt;/p&gt;
 &lt;h6 id=&#34;2习题-4&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2习题-4&#34;&gt;#&lt;/a&gt; 2. 习题&lt;/h6&gt;
 &lt;p&gt;《张宇 1000 题》线代部分 + 刷题实战演练视频&lt;/p&gt;
-&lt;h4 id=&#34;概率&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概率&#34;&gt;#&lt;/a&gt; 概率&lt;/h4&gt;
-&lt;h5 id=&#34;a概率基础&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#a概率基础&#34;&gt;#&lt;/a&gt; A. 概率基础&lt;/h5&gt;
-&lt;h6 id=&#34;1教材辅导-5&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1教材辅导-5&#34;&gt;#&lt;/a&gt; 1. 教材辅导&lt;/h6&gt;
-&lt;p&gt;《李永乐王式安复习全书》概率部分 + 王式安基础班视频&lt;/p&gt;
-&lt;h6 id=&#34;2习题-5&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2习题-5&#34;&gt;#&lt;/a&gt; 2. 习题&lt;/h6&gt;
-&lt;p&gt;《李永乐王式安复习全书》概率部分例题&lt;/p&gt;
-&lt;h5 id=&#34;b概率强化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#b概率强化&#34;&gt;#&lt;/a&gt; B. 概率强化&lt;/h5&gt;
-&lt;h6 id=&#34;1教材辅导-6&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1教材辅导-6&#34;&gt;#&lt;/a&gt; 1. 教材辅导&lt;/h6&gt;
-&lt;p&gt;《张宇概率 9 讲》&lt;/p&gt;
-&lt;p&gt;《王式安概率辅导讲义》+ 王式安强化班视频&lt;/p&gt;
-&lt;h6 id=&#34;2习题-6&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2习题-6&#34;&gt;#&lt;/a&gt; 2. 习题&lt;/h6&gt;
-&lt;p&gt;《张宇 1000 题》概率部分 + 刷题实战演练视频&lt;/p&gt;
-&lt;h4 id=&#34;真题模拟题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#真题模拟题&#34;&gt;#&lt;/a&gt; 真题模拟题&lt;/h4&gt;
+&lt;h4 id=&#34;真题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#真题&#34;&gt;#&lt;/a&gt; 真题&lt;/h4&gt;
 &lt;p&gt;《张宇考研数学真题大全解》+ 真题精讲视频&lt;/p&gt;
+&lt;h4 id=&#34;模拟题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#模拟题&#34;&gt;#&lt;/a&gt; 模拟题&lt;/h4&gt;
 &lt;p&gt;《张宇八套卷》+ 重要题目讲解视频&lt;/p&gt;
 &lt;h3 id=&#34;英语&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#英语&#34;&gt;#&lt;/a&gt; 英语&lt;/h3&gt;
 &lt;h4 id=&#34;1单词&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1单词&#34;&gt;#&lt;/a&gt; 1. 单词&lt;/h4&gt;
@@ -13092,12 +13476,10 @@ int main() &amp;#123;
 &lt;p&gt;肖秀荣《知识点精讲精练》&lt;/p&gt;
 &lt;p&gt;肖秀荣《命题冲刺 8 套卷》必背大题&lt;/p&gt;
 &lt;p&gt;肖秀荣《命题终极预测 4 套卷》必背大题&lt;/p&gt;
-&lt;h3 id=&#34;专业课408&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#专业课408&#34;&gt;#&lt;/a&gt; 专业课 408&lt;/h3&gt;
-&lt;h4 id=&#34;1教材辅导-7&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1教材辅导-7&#34;&gt;#&lt;/a&gt; 1. 教材辅导&lt;/h4&gt;
-&lt;p&gt;” 四本课本 “&lt;/p&gt;
+&lt;h3 id=&#34;专业课874&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#专业课874&#34;&gt;#&lt;/a&gt; 专业课 874&lt;/h3&gt;
+&lt;h4 id=&#34;1教材辅导-5&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1教材辅导-5&#34;&gt;#&lt;/a&gt; 1. 教材辅导&lt;/h4&gt;
 &lt;p&gt;天勤《数据结构》+ 强化视频&lt;/p&gt;
 &lt;p&gt;《王道数据结构》习题&lt;/p&gt;
-&lt;p&gt;《王道计组》+ 强化视频&lt;/p&gt;
 &lt;p&gt;《王道计网》+ 强化视频&lt;/p&gt;
 &lt;p&gt;《王道操作系统》+ 强化视频&lt;/p&gt;
 &lt;h4 id=&#34;2真题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2真题&#34;&gt;#&lt;/a&gt; 2. 真题&lt;/h4&gt;
@@ -13105,7 +13487,6 @@ int main() &amp;#123;
 &lt;h4 id=&#34;3模拟题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3模拟题&#34;&gt;#&lt;/a&gt; 3. 模拟题&lt;/h4&gt;
 &lt;p&gt;王道《模拟题》+ 模拟题视频&lt;/p&gt;
 &lt;h4 id=&#34;4机试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4机试&#34;&gt;#&lt;/a&gt; 4. 机试&lt;/h4&gt;
-&lt;p&gt;《算法笔记》+PAT 甲级考试&lt;/p&gt;
 &lt;p&gt;王道《机试指南》+ 复试机试视频&lt;/p&gt;
 &lt;h2 id=&#34;考研规划&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#考研规划&#34;&gt;#&lt;/a&gt; 考研规划&lt;/h2&gt;
 &lt;h3 id=&#34;数学-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学-2&#34;&gt;#&lt;/a&gt; 数学&lt;/h3&gt;
@@ -13115,23 +13496,22 @@ int main() &amp;#123;
 &lt;h5 id=&#34;4月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4月&#34;&gt;#&lt;/a&gt; 4 月&lt;/h5&gt;
 &lt;p&gt;线代：《李永乐王式安复习全书》线代部分 + 李永乐基础班视频&lt;/p&gt;
 &lt;h5 id=&#34;5月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5月&#34;&gt;#&lt;/a&gt; 5 月&lt;/h5&gt;
-&lt;p&gt;概率论：《李永乐王式安复习全书》概率部分 + 王式安基础班视频&lt;/p&gt;
+&lt;p&gt;刷题：《1800 题》&lt;/p&gt;
 &lt;h4 id=&#34;2强化阶段&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2强化阶段&#34;&gt;#&lt;/a&gt; 2. 强化阶段&lt;/h4&gt;
 &lt;h5 id=&#34;7月-8月15日&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7月-8月15日&#34;&gt;#&lt;/a&gt; 7 月 - 8 月 15 日&lt;/h5&gt;
 &lt;p&gt;高数：《张宇高数 18 讲》+ 张宇强化班视频、《张宇 1000 题》高数部分例题&lt;/p&gt;
 &lt;h5 id=&#34;8月15日-9月10日&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#8月15日-9月10日&#34;&gt;#&lt;/a&gt; 8 月 15 日 - 9 月 10 日&lt;/h5&gt;
-&lt;p&gt;线代：《张宇线代 9 讲》、《李永乐线代辅导讲义》+ 李永乐强化班视频、《张宇 1000 题》线代部分例题&lt;/p&gt;
+&lt;p&gt;线代：《李永乐线代辅导讲义》+ 李永乐强化班视频、《张宇 1000 题》线代部分例题&lt;/p&gt;
 &lt;h5 id=&#34;9月10日-9月31日&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#9月10日-9月31日&#34;&gt;#&lt;/a&gt; 9 月 10 日 - 9 月 31 日&lt;/h5&gt;
-&lt;p&gt;概率：《张宇概率 9 讲》、《王式安概率辅导讲义》+ 王式安强化班视频、《张宇 1000 题》概率部分例题&lt;/p&gt;
+&lt;p&gt;真题：《张宇考研数学真题大全解》+ 真题精讲视频&lt;/p&gt;
 &lt;h4 id=&#34;3冲刺阶段&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3冲刺阶段&#34;&gt;#&lt;/a&gt; 3. 冲刺阶段&lt;/h4&gt;
 &lt;h5 id=&#34;10月-12月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#10月-12月&#34;&gt;#&lt;/a&gt; 10 月 - 12 月&lt;/h5&gt;
-&lt;p&gt;《张宇考研数学真题大全解》+ 真题精讲视频&lt;/p&gt;
 &lt;p&gt;《张宇八套卷》+ 重要题目讲解视频&lt;/p&gt;
 &lt;h3 id=&#34;英语-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#英语-2&#34;&gt;#&lt;/a&gt; 英语&lt;/h3&gt;
 &lt;h4 id=&#34;1基础阶段-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1基础阶段-2&#34;&gt;#&lt;/a&gt; 1. 基础阶段&lt;/h4&gt;
-&lt;h5 id=&#34;1月-2月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1月-2月&#34;&gt;#&lt;/a&gt; 1 月 - 2 月&lt;/h5&gt;
+&lt;h5 id=&#34;2月-4月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2月-4月&#34;&gt;#&lt;/a&gt; 2 月 - 4 月&lt;/h5&gt;
 &lt;p&gt;单词：集中背单词，以后每天循环背&lt;/p&gt;
-&lt;h5 id=&#34;3月-5月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3月-5月&#34;&gt;#&lt;/a&gt; 3 月 - 5 月&lt;/h5&gt;
+&lt;h5 id=&#34;4月-5月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4月-5月&#34;&gt;#&lt;/a&gt; 4 月 - 5 月&lt;/h5&gt;
 &lt;p&gt;单词：每天循环背&lt;/p&gt;
 &lt;p&gt;长难句：考研核心语法视频&lt;/p&gt;
 &lt;p&gt;阅读：唐迟《考研英语阅读的逻辑》+ 阅读逻辑视频&lt;/p&gt;
@@ -13158,24 +13538,22 @@ int main() &amp;#123;
 &lt;h4 id=&#34;3冲刺阶段-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3冲刺阶段-3&#34;&gt;#&lt;/a&gt; 3. 冲刺阶段&lt;/h4&gt;
 &lt;h5 id=&#34;12月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#12月&#34;&gt;#&lt;/a&gt; 12 月&lt;/h5&gt;
 &lt;p&gt;模拟题：肖秀荣《命题终极预测 4 套卷》，&lt;strong&gt;肖 4 最重要，大题都要背&lt;/strong&gt;，每年肖四都能押中好几道简答题，非常良心，无数经验推荐，考前必背。&lt;/p&gt;
-&lt;h3 id=&#34;专业课408-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#专业课408-2&#34;&gt;#&lt;/a&gt; 专业课 408&lt;/h3&gt;
+&lt;h3 id=&#34;专业课874-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#专业课874-2&#34;&gt;#&lt;/a&gt; 专业课 874&lt;/h3&gt;
 &lt;h4 id=&#34;1基础阶段-4&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1基础阶段-4&#34;&gt;#&lt;/a&gt; 1. 基础阶段&lt;/h4&gt;
-&lt;h5 id=&#34;1月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1月&#34;&gt;#&lt;/a&gt; 1 月&lt;/h5&gt;
-&lt;p&gt;数据结构：天勤《数据结构》+ 强化视频、《王道数据结构》选择题&lt;/p&gt;
-&lt;h5 id=&#34;2月-3月15&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2月-3月15&#34;&gt;#&lt;/a&gt; 2 月 - 3 月 15&lt;/h5&gt;
-&lt;p&gt;《算法笔记》+PAT 甲级考试&lt;/p&gt;
+&lt;h5 id=&#34;2月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2月&#34;&gt;#&lt;/a&gt; 2 月&lt;/h5&gt;
+&lt;p&gt;王道 C 语言&lt;/p&gt;
 &lt;h5 id=&#34;3月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3月&#34;&gt;#&lt;/a&gt; 3 月&lt;/h5&gt;
-&lt;p&gt;《王道计组》选择题 + 强化视频&lt;/p&gt;
+&lt;p&gt;《王道数据结构》选择题 + 强化视频&lt;/p&gt;
 &lt;h5 id=&#34;4月-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4月-2&#34;&gt;#&lt;/a&gt; 4 月&lt;/h5&gt;
 &lt;p&gt;《王道计网》选择题 + 强化视频&lt;/p&gt;
 &lt;h5 id=&#34;5月-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5月-2&#34;&gt;#&lt;/a&gt; 5 月&lt;/h5&gt;
 &lt;p&gt;《王道操作系统》选择题 + 强化视频&lt;/p&gt;
 &lt;h4 id=&#34;2强化阶段-4&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2强化阶段-4&#34;&gt;#&lt;/a&gt; 2. 强化阶段&lt;/h4&gt;
 &lt;h5 id=&#34;7月-8月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7月-8月&#34;&gt;#&lt;/a&gt; 7 月 - 8 月&lt;/h5&gt;
-&lt;p&gt;二刷《王道数据结构》、《王道计组》、《王道计网》、《王道操作系统》选择题和大题&lt;/p&gt;
+&lt;p&gt;二刷《王道数据结构》、《王道计网》、《王道操作系统》选择题和大题&lt;/p&gt;
 &lt;p&gt;全面复习知识点及第一轮复习遗留下来的难点&lt;/p&gt;
 &lt;h5 id=&#34;9月&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#9月&#34;&gt;#&lt;/a&gt; 9 月&lt;/h5&gt;
-&lt;p&gt;参照天勤《数据结构》、《计组》、《计网》、《操作系统》整理出一份自己的重要知识点汇总及易混知识点对比，快速的把天勤复习全书上的题刷完。&lt;/p&gt;
+&lt;p&gt;参照天勤《数据结构》、《计网》、《操作系统》整理出一份自己的重要知识点汇总及易混知识点对比，快速的把天勤复习全书上的题刷完。&lt;/p&gt;
 &lt;h4 id=&#34;3冲刺阶段-4&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3冲刺阶段-4&#34;&gt;#&lt;/a&gt; 3. 冲刺阶段&lt;/h4&gt;
 &lt;h5 id=&#34;10月-11月-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#10月-11月-2&#34;&gt;#&lt;/a&gt; 10 月 - 11 月&lt;/h5&gt;
 &lt;p&gt;王道《历年真题解析》+ 历年真题视频&lt;/p&gt;
@@ -13198,30 +13576,5 @@ int main() &amp;#123;
         <category term="实用技巧" scheme="https://zengshengli775.gitee.io/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" />
         <category term="Mac" scheme="https://zengshengli775.gitee.io/tags/Mac/" />
         <updated>2021-08-12T16:00:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://zengshengli775.gitee.io/2021/08/12/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
-        <title>Python基础知识</title>
-        <link rel="alternate" href="https://zengshengli775.gitee.io/2021/08/12/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-        <content type="html">&lt;h2 id=&#34;标识符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#标识符&#34;&gt;#&lt;/a&gt; 标识符&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;字母、下划线、数字&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;区分大小写&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;字符串&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字符串&#34;&gt;#&lt;/a&gt; 字符串&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;string&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;title&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 首字母大写&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token string&#34;&gt;&#34;srring1&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;string2&#34;&lt;/span&gt; 字符串拼接&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;\tPython&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; \t为Table键&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;C\nPython&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; \n为换行符&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;C&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;Python&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;end&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34; &#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; end&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34; &#34;&lt;/span&gt;为以&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;为间隔&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;string&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;strip&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 删除字符串两边的空白&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;join&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sequence&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;-&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	seq &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;a&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;b&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;c&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 字符串序列&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;join&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt; seq &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	以上实例输出结果如下：&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	a&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;b&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;c&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;string&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;&amp;#123;0:.2f&amp;#125; &amp;#123;1:.2f&amp;#125;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;y&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;和&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;表示&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;函数中第一个和第二个参数&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2f&lt;/span&gt;表示小数部分保留两位&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;数字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数字&#34;&gt;#&lt;/a&gt; 数字&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;&amp;#123;:.2f&amp;#125;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;y&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 输出y为两位小数&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;start&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;end&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;gap&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 生成随机数，从start开始，end结束，以gap为间隔&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;lower&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;upper &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;split&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 输入多个值&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;math&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;pow&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;y&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; x的y次方&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;math&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sqrt&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; x的平方根&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;pi 圆周率&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;e 自然常数&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;列表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表&#34;&gt;#&lt;/a&gt; 列表&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;序列从&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;开始&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;append&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 将元素添加到列表末尾&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;insert&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;索引，值&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 将元素添加到列表任意位置&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;del&lt;/span&gt; string&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;索引&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; 删除列表中元素&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pop&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;索引&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 删除列表元素（默认是末尾）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;6&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; 列表推导式&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;remove&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;值&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 删除列表值&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sort&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 列表永久排序 reverse&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;为与字母顺序相反的顺序排序&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;sorted&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 列表临时排序&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;reverse&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 反转列表顺序&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 确定列表长度&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Test2&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;Test1&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; 复制列表&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;元组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#元组&#34;&gt;#&lt;/a&gt; 元组&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tup&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Google&lt;span class=&#34;token string&#34;&gt;&#39;, &#39;&lt;/span&gt;Runoo&lt;span class=&#34;token string&#34;&gt;b&#39;, &#39;&lt;/span&gt;Taobao&lt;span class=&#34;token string&#34;&gt;&#39;, &#39;&lt;/span&gt;Wiki&lt;span class=&#34;token string&#34;&gt;&#39;, &#39;&lt;/span&gt;Weibo&lt;span class=&#34;token string&#34;&gt;&#39;,&#39;&lt;/span&gt;Weixin&#39;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;del&lt;/span&gt; tup 删除元组&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tup3 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; tup1 &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; tup2 元组不能修改、删除元素&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tup&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;集合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#集合&#34;&gt;#&lt;/a&gt; 集合&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;set&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 创建集合&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;s &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;apple&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;orange&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;apple&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;pear&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;orange&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;banana&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; 集合是无序的&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;s&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;add&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt; x &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 添加元素&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;s&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;remove&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt; x &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 移除元素&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;s&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;discard&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt; x &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 移除集合中的元素，且如果元素不存在，不会发生错误&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;s&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pop&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 随机删除集合中的一个元素&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;s&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 计算集合 s 元素个数&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;s&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;clear&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 清空集合&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;字典&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字典&#34;&gt;#&lt;/a&gt; 字典&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;dict&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Name&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Runoob&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Age&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Class&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;First&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Name&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 访问字典里的值&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Age&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;8&lt;/span&gt; 修改字典&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;del&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Name&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; 删除键 &lt;span class=&#34;token string&#34;&gt;&#39;Name&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;clear&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 清空字典&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;del&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;dict&lt;/span&gt; 删除字典&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;迭代器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#迭代器&#34;&gt;#&lt;/a&gt; 迭代器&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;迭代器有两个基本的方法：&lt;span class=&#34;token builtin&#34;&gt;iter&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 和 &lt;span class=&#34;token builtin&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; it &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;iter&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;    &lt;span class=&#34;token comment&#34;&gt;# 创建迭代器对象&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;it&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;   &lt;span class=&#34;token comment&#34;&gt;# 输出迭代器的下一个元素&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;it&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;把一个类作为一个迭代器使用需要在类中实现两个方法 __iter__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 与 __next__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 	&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;MyNumbers&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__iter__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;a &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; self&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__next__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;a &lt;span class=&#34;token operator&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			x &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;a&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;a &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; x&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token keyword&#34;&gt;raise&lt;/span&gt; StopIteration &lt;span class=&#34;token comment&#34;&gt;#StopIteration 异常用于标识迭代的完成，防止出现无限循环的情况	&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;myclass &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; MyNumbers&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;myiter &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;iter&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;myclass&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; x &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; myiter&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;​&lt;/p&gt;
-&lt;h2 id=&#34;生成器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#生成器&#34;&gt;#&lt;/a&gt; 生成器&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;在 Python 中，使用了 &lt;span class=&#34;token keyword&#34;&gt;yield&lt;/span&gt; 的函数被称为生成器（generator）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;使用 &lt;span class=&#34;token keyword&#34;&gt;yield&lt;/span&gt; 实现斐波那契数列&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; sys&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;fibonacci&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;n&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 生成器函数 - 斐波那契&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; counter &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;counter &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; n&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token keyword&#34;&gt;yield&lt;/span&gt; a&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		a&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; b &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; b&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; a &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; b&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		counter &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;f &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; fibonacci&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# f 是一个迭代器，由生成器返回生成&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;f&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; end&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34; &#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token keyword&#34;&gt;except&lt;/span&gt; StopIteration&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;​&lt;/p&gt;
-&lt;h2 id=&#34;函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#函数&#34;&gt;#&lt;/a&gt; 函数&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;python 使用 &lt;span class=&#34;token keyword&#34;&gt;lambda&lt;/span&gt; 来创建匿名函数&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 可写函数说明&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;sum&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;lambda&lt;/span&gt; arg1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; arg2&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; arg1 &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; arg2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 调用 sum 函数&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;相加后的值为 : &#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;20&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;相加后的值为 : &#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;20&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;不定长参数 &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件&#34;&gt;#&lt;/a&gt; 文件&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;open&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;Python.txt&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;rt&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 以文本方式打开文件&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;第一个字母r表示操作，第二个字母t表示文件类型&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;close&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 关闭文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;readline&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 读取整行&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;write&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 将字符串写入文件，返回的是写入的字符长度&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;模块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#模块&#34;&gt;#&lt;/a&gt; 模块&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;##plotly 模块&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 创建 data frame&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;df &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; timesData&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;iloc&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# import graph objects as &#34;go&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; plotly&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;graph_objs &lt;span class=&#34;token keyword&#34;&gt;as&lt;/span&gt; go&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 设置第一条折线 trace1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# go.Scatter 可以创建一个散点图或者折线图的对象，我们将其命名为 trace1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;trace1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; go&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Scatter&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    x &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; df&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;world_rank&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;   &lt;span class=&#34;token comment&#34;&gt;# 定义坐标轴的映射关系，将 world_rank 这一列作为 x 轴&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    y &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; df&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;citations&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;    &lt;span class=&#34;token comment&#34;&gt;# 同理，将 citations 这一列作为 y 轴&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    mode &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;lines&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;      &lt;span class=&#34;token comment&#34;&gt;# 我们要绘制折线图，所以将 mode 设置为 “lines”&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;citations&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 将这条折线命名为 citations&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    marker &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;color &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;rgba(16, 112, 2, 0.8)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    &lt;span class=&#34;token comment&#34;&gt;# maker 用来定义点的性质，如颜色、大小等&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    text&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; df&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;university_name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    &lt;span class=&#34;token comment&#34;&gt;# 将 university_name 一列设置为悬停文本（鼠标悬停在图片上方显示的内容）&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 设置第二条折线 trace2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;trace2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; go&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Scatter&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    x &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; df&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;world_rank&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    y &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; df&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;teaching&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    mode &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;lines+markers&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#绘制的折线图由散点连接而成，即 lines+markers&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;teaching&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    marker &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;color &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;rgba(80, 26, 80, 0.8)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;                    text&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; df&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;university_name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;data &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;trace1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; trace2&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 添加图层 layout&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;layout &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;title &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Citation and Teaching vs World Rank of Top 100 Universities&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;              &lt;span class=&#34;token comment&#34;&gt;# 设置图像的标题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;              xaxis&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;title&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;World Rank&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;ticklen&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;zeroline&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;35&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;              &lt;span class=&#34;token comment&#34;&gt;# 设置 x 轴名称，x 轴刻度线的长度，不显示零线&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;36&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;37&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;38&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 将 data 与 layout 组合为一个图像&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;39&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;fig &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;dict&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;data &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; data&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; layout &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; layout&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;40&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 绘制图像&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;41&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;iplot&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;fig&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;​&lt;/p&gt;
-&lt;h2 id=&#34;类和对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#类和对象&#34;&gt;#&lt;/a&gt; 类和对象&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#创建类&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;ClassName&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token string&#34;&gt;&#39;类的帮助信息&#39;&lt;/span&gt;   &lt;span class=&#34;token comment&#34;&gt;#类文档字符串&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   class_suite  &lt;span class=&#34;token comment&#34;&gt;#类体，class_suite 由类成员，方法，数据属性组成。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#创建实例对象&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Employee&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token string&#34;&gt;&#39;所有员工的基类&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   empCount &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; name&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; salary&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#构造方法，用于创建对象&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; name &lt;span class=&#34;token comment&#34;&gt;#定义成员变量&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;salary &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; salary&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      Employee&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;empCount &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;displayCount&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;Total Employee %d&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;%&lt;/span&gt; Employee&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;empCount&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;displayEmployee&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;Name : &#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;name&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;token string&#34;&gt;&#34;, Salary: &#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;salary&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token string&#34;&gt;&#34;创建 Employee 类的第一个对象&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;emp1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Employee&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;Zara&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2000&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token string&#34;&gt;&#34;创建 Employee 类的第二个对象&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;emp2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Employee&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;Manni&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5000&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;emp1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;displayEmployee&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;emp2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;displayEmployee&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;Total Employee %d&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;%&lt;/span&gt; Employee&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;empCount&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#访问属性&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;## 您可以使用点号。来访问对象的属性 对象名。成员名&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;emp1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;displayEmployee&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;33&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;emp2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;displayEmployee&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;34&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;Total Employee %d&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;%&lt;/span&gt; Employee&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;empCount&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="编程基础" scheme="https://zengshengli775.gitee.io/categories/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/" />
-        <category term="Python" scheme="https://zengshengli775.gitee.io/tags/Python/" />
-        <updated>2021-08-11T16:00:00.000Z</updated>
     </entry>
 </feed>
